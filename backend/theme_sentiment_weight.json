@@ -1,0 +1,2102 @@
+[
+  {
+    "theme":"water",
+    "average_sentiment":0.045,
+    "weight":0.155,
+    "num_comments":9
+  },
+  {
+    "theme":"cerave",
+    "average_sentiment":0.01,
+    "weight":0.121,
+    "num_comments":7
+  },
+  {
+    "theme":"cleanser",
+    "average_sentiment":0.15,
+    "weight":0.121,
+    "num_comments":7
+  },
+  {
+    "theme":"skin",
+    "average_sentiment":0.047,
+    "weight":0.103,
+    "num_comments":6
+  },
+  {
+    "theme":"foam",
+    "average_sentiment":0.233,
+    "weight":0.103,
+    "num_comments":6
+  },
+  {
+    "theme":"test",
+    "average_sentiment":0.054,
+    "weight":0.069,
+    "num_comments":4
+  },
+  {
+    "theme":"need",
+    "average_sentiment":0.163,
+    "weight":0.069,
+    "num_comments":4
+  },
+  {
+    "theme":"looks",
+    "average_sentiment":0.197,
+    "weight":0.069,
+    "num_comments":4
+  },
+  {
+    "theme":"makeup",
+    "average_sentiment":0.368,
+    "weight":0.069,
+    "num_comments":4
+  },
+  {
+    "theme":"foams",
+    "average_sentiment":0.05,
+    "weight":0.069,
+    "num_comments":4
+  },
+  {
+    "theme":"rub",
+    "average_sentiment":0.167,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"cruelty free",
+    "average_sentiment":-0.167,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"cruelty",
+    "average_sentiment":-0.167,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"oil",
+    "average_sentiment":0.006,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"test animals",
+    "average_sentiment":0.071,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"animals",
+    "average_sentiment":0.071,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"water based",
+    "average_sentiment":-0.1,
+    "weight":0.052,
+    "num_comments":3
+  },
+  {
+    "theme":"australia",
+    "average_sentiment":0.546,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"soap",
+    "average_sentiment":0.25,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"cleanse",
+    "average_sentiment":0.392,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"does foam",
+    "average_sentiment":0.323,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"rub hands",
+    "average_sentiment":0.125,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"using water",
+    "average_sentiment":-0.4,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"skin care",
+    "average_sentiment":0.175,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"hands",
+    "average_sentiment":0.0,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"supposed",
+    "average_sentiment":0.0,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"based",
+    "average_sentiment":0.0,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"america",
+    "average_sentiment":-0.075,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"based cleanser",
+    "average_sentiment":-0.15,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"face",
+    "average_sentiment":0.156,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"add water",
+    "average_sentiment":0.25,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"cerave cruelty",
+    "average_sentiment":-0.25,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"cleansing oil",
+    "average_sentiment":0.0,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"damp",
+    "average_sentiment":0.25,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"cleansing",
+    "average_sentiment":0.0,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"damp skin",
+    "average_sentiment":0.25,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"ve",
+    "average_sentiment":0.25,
+    "weight":0.034,
+    "num_comments":2
+  },
+  {
+    "theme":"run ulta",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ulta guys",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ulta",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wow",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"good",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"run",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wow looks",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"time run",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"guys",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"looks good",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"early",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"great review",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"really mild",
+    "average_sentiment":0.333,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"time",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"make foam",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"supposed rub",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hands make",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"make",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"morning cleanser",
+    "average_sentiment":0.333,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleanser looks",
+    "average_sentiment":0.333,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"mild",
+    "average_sentiment":0.333,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"morning",
+    "average_sentiment":0.333,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"looks really",
+    "average_sentiment":0.333,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"doesn cerave",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"america doesn",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wait america",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"doesn",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"good early",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hoped",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"looking really",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"micellar waters",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"love ceramides",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ceramides",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"sold",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"correct",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"waters",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"waters sold",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"micellar",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"correct micellar",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"waterproof",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"really good",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"need waterproof",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"mascara",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"mascara test",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"waterproof mascara",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"target",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"amazon",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"walmart",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"target walmart",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ceramides include",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"gentle skin",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use skin",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"include skin",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wondering worth",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"worth",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"think cerave",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"moisturizer",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"moisturizer looking",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cerave moisturizer",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"bought",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"try",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hoped wouldn",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wouldn need",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"happy",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"need happy",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"bought vacation",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"vacation",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"vacation hoped",
+    "average_sentiment":0.8,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"gentle",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"care gentle",
+    "average_sentiment":0.35,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wait",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foams use",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"face cleanse",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"apply face",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wow don",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"like wearing",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wearing",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"washed",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wearing washed",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"makeup looks",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"need makeup",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water create",
+    "average_sentiment":-0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"product water",
+    "average_sentiment":-0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleanser confusing",
+    "average_sentiment":-0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"lather",
+    "average_sentiment":-0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"create lather",
+    "average_sentiment":-0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"appreciate support",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"appreciate",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"sell",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"business",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hey sell",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"don need",
+    "average_sentiment":0.156,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"gets foamy",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foamy",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"eye test",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ship",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"caretobeauty",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"caretobeauty ship",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"17 caretobeauty",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"eye",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"tested",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"did eye",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"animals tested",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"supposed wet",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"certainly",
+    "average_sentiment":0.214,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"certainly test",
+    "average_sentiment":0.214,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hands supposed",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"kind rub",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wet kind",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"face hands",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wet",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"sell cool",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"small business",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"jewelry",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"clean skin",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"care future",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"proper skin",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cat",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cat needs",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"clean",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use clean",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"skin meaning",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"products dry",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"care",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"makeup involved",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"meaning makeup",
+    "average_sentiment":0.367,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"got today",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"apply",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"need water",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water apply",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleanse got",
+    "average_sentiment":0.312,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"needs proper",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"proper",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"trendy jewelry",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"suggesting",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"jewelry affordable",
+    "average_sentiment":0.225,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"applying",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hands applying",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"emulsify",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"emulsify hands",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"supposed emulsify",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"applying face",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"need demand",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"needs",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"suggesting need",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"demand better",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"companies",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"better companies",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"toxic",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"toxic does",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cerave toxic",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"walmart amazon",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cloth",
+    "average_sentiment":-0.167,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"feel sticky",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"combination skin",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleaner",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foaming",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"definitely prefer",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleaner fyi",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"prefer cerave",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foaming cleaner",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cerave foaming",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"designed used",
+    "average_sentiment":0.7,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"australia designed",
+    "average_sentiment":0.7,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"remover does",
+    "average_sentiment":0.7,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"remover",
+    "average_sentiment":0.7,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"used makeup",
+    "average_sentiment":0.7,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"makeup remover",
+    "average_sentiment":0.7,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"clinique",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"balms",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"clinique good",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"remove makeup",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"prefer",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"burns eyes",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foam quite",
+    "average_sentiment":0.145,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"tint isn",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water just",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"just damp",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foam need",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"skin foam",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"double",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"fine double",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"tint",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleanse use",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"bit water",
+    "average_sentiment":0.145,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"sunscreen",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use sunscreen",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"double cleanse",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"sunscreen tint",
+    "average_sentiment":0.472,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"quite bit",
+    "average_sentiment":0.145,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"does",
+    "average_sentiment":0.145,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"using product",
+    "average_sentiment":0.145,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"expensive soap",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"balms remove",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use balms",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"unfortunately",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"good stuff",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"having good",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"stuff annoying",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"annoying need",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"america having",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"thinking cleansing",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleanser got",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"unfortunately cerave",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"annoying",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"receive",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"great",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"extremely",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"receive great",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"honored",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"honored receive",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"extremely honored",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"stuff",
+    "average_sentiment":-0.15,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"second cleanser",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"makeup clinique",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cerave cleansers",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foam tell",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"tell cleanser",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleansers say",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"say soap",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cr\u00e8me doesn",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cr\u00e8me",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"says cr\u00e8me",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"screaming",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use second",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"oily",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"oily skin",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"skin screaming",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"better",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"second",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"better use",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"rub water",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"actually foam",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foam bit",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"naturally",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"conducting animal",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"animal tests",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"product",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"similar",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"product similar",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"similar cleansing",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"yay",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"beautiful",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"animal",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"naturally beautiful",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"curious",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"new",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"curious new",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"isdin",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"new isdin",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"oil cleanser",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"tests",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"conducting",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"got",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"extensions",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cerave products",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"skin cerave",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"eczema",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ugh eczema",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"eczema combination",
+    "average_sentiment":-0.433,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"like",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"looks like",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"like lash",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cloth foams",
+    "average_sentiment":-0.167,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"lash",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"lash extensions",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"review",
+    "average_sentiment":0.438,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"muslin",
+    "average_sentiment":-0.167,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foams lot",
+    "average_sentiment":-0.167,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"use muslin",
+    "average_sentiment":-0.167,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"muslin cloth",
+    "average_sentiment":-0.167,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"isdin oil",
+    "average_sentiment":0.018,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ve got",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water hands",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"glad",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water ve",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"thanks",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"available",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"make available",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"thanks demo",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"demo",
+    "average_sentiment":0.3,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"glad like",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"long popular",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"using wrong",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"popular",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"popular glad",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"australia long",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ve australia",
+    "average_sentiment":0.392,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hands does",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"work",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"work better",
+    "average_sentiment":0.25,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"ve using",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"using",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"got perfect",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"create foam",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"perfect",
+    "average_sentiment":1.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"texture",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cleanser create",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"enhance texture",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water cleanser",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foam really",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cream",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"cream foam",
+    "average_sentiment":0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wrong",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"skin doesn",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foams say",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"water foams",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"say damp",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"hand",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"foam hand",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"wait ve",
+    "average_sentiment":-0.5,
+    "weight":0.017,
+    "num_comments":1
+  },
+  {
+    "theme":"17",
+    "average_sentiment":0.0,
+    "weight":0.017,
+    "num_comments":1
+  }
+]

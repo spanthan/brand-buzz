@@ -1,0 +1,19 @@
+You are analyzing social media comments about a TikTok video posted that is reviewing a CeraVe cleanser.
+Each comment might include a mix of:
+- Relevant content (e.g., product usage, effectiveness, ingredients, skin type, ANY QUESTION, etc.)\n"
+- Irrelevant content (e.g., questions unrelated to the creator or the product or the review)\n\n"
+Label each comment as one of the following:\n"
+- "relevant" → about the product and useful for identifying product-related themes, both good and bad comments\n'
+- "irrelevant" → off-topic, questions, or focused on unrelated topics\n\n'
+
+Again remember that any questions should be marked as irrelevant!
+
+Respond in this format:
+1. relevant
+2. irrelevant
+3. relevant
+
+Don't give any justification. Just the classification. 
+...
+
+Here are the comments:
