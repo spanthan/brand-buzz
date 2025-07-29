@@ -150,7 +150,7 @@ def build_nodes(theme_comment_counts,
         dominant_sentiment = max(sentiment_data.items(), key=lambda x: x[1])[0]
         weight = round(count, 3)
         nodes.append({
-            "id": theme,
+            "keyword": theme,
             "weight": weight,
             "sentiment": dominant_sentiment
         })
@@ -184,7 +184,7 @@ def add_llm_links(graph, min_links=4, top_k=10):
         connected[link['source']].add(link['target'])
         connected[link['target']].add(link['source'])
 
-    all_themes = [node["id"] for node in nodes]
+    all_themes = [node["keyword"] for node in nodes]
     theme_index = {t: i for i, t in enumerate(all_themes)}
 
     # Embed all themes once
@@ -193,7 +193,7 @@ def add_llm_links(graph, min_links=4, top_k=10):
     # Add synthetic links
     new_links = []
     for node in nodes:
-        theme = node["id"]
+        theme = node["keyword"]
         current_neighbors = connected[theme]
 
         if len(current_neighbors) >= min_links:
@@ -219,7 +219,7 @@ def add_llm_links(graph, min_links=4, top_k=10):
                 "value": 0.5  # mark it as LLM-based
             })
             connected[theme].add(candidate)
-            connected[candidate].add(theme)
+            # connected[candidate].add(theme)
             count += 1
             if len(connected[theme]) >= min_links:
                 break

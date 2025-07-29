@@ -1,180 +1,280 @@
 {
   "nodes": [
     {
-      "id": "cerave products",
-      "weight": 7,
-      "sentiment": "negative"
-    },
-    {
-      "id": "not cruelty-free",
-      "weight": 3,
-      "sentiment": "negative"
-    },
-    {
-      "id": "makeup remover",
-      "weight": 3,
-      "sentiment": "positive"
-    },
-    {
-      "id": "foam up",
+      "keyword": "cerave isn't cruelty-free",
       "weight": 5,
       "sentiment": "negative"
     },
     {
-      "id": "water-based",
+      "keyword": "good morning cleanser",
+      "weight": 5,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "makes me itchy",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "not suitable for oily skin",
+      "weight": 2,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "not designed for makeup removal",
+      "weight": 4,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "washes off makeup",
+      "weight": 3,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "preferred over foaming cleaner",
+      "weight": 8,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "foams with water",
+      "weight": 9,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "it's water-based",
       "weight": 2,
       "sentiment": "positive"
     },
     {
-      "id": "animal tests",
+      "keyword": "available in australia",
+      "weight": 2,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "needs wet skin",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "supports animal testing",
       "weight": 4,
       "sentiment": "negative"
     },
     {
-      "id": "eczema",
+      "keyword": "requires emulsification",
       "weight": 1,
       "sentiment": "negative"
-    },
-    {
-      "id": "waterproof mascara",
-      "weight": 1,
-      "sentiment": "positive"
-    },
-    {
-      "id": "micellar waters",
-      "weight": 1,
-      "sentiment": "negative"
-    },
-    {
-      "id": "ceramides",
-      "weight": 1,
-      "sentiment": "positive"
-    },
-    {
-      "id": "ulta",
-      "weight": 1,
-      "sentiment": "positive"
     }
   ],
   "links": [
     {
-      "source": "cerave products",
-      "target": "not cruelty-free",
-      "value": 2
-    },
-    {
-      "source": "ceramides",
-      "target": "cerave products",
+      "source": "makes me itchy",
+      "target": "not suitable for oily skin",
       "value": 1
     },
     {
-      "source": "animal tests",
-      "target": "not cruelty-free",
+      "source": "not designed for makeup removal",
+      "target": "washes off makeup",
+      "value": 3
+    },
+    {
+      "source": "foams with water",
+      "target": "preferred over foaming cleaner",
+      "value": 7
+    },
+    {
+      "source": "foams with water",
+      "target": "needs wet skin",
       "value": 1
     },
     {
-      "source": "cerave products",
-      "target": "makeup remover",
+      "source": "foams with water",
+      "target": "not designed for makeup removal",
+      "value": 1
+    },
+    {
+      "source": "foams with water",
+      "target": "washes off makeup",
+      "value": 1
+    },
+    {
+      "source": "not designed for makeup removal",
+      "target": "preferred over foaming cleaner",
+      "value": 1
+    },
+    {
+      "source": "preferred over foaming cleaner",
+      "target": "washes off makeup",
+      "value": 1
+    },
+    {
+      "source": "foams with water",
+      "target": "it's water-based",
+      "value": 1
+    },
+    {
+      "source": "it's water-based",
+      "target": "preferred over foaming cleaner",
+      "value": 1
+    },
+    {
+      "source": "cerave isn't cruelty-free",
+      "target": "supports animal testing",
+      "value": 1
+    },
+    {
+      "source": "cerave isn't cruelty-free",
+      "target": "not suitable for oily skin",
       "value": 0.5
     },
     {
-      "source": "cerave products",
-      "target": "water-based",
+      "source": "cerave isn't cruelty-free",
+      "target": "it's water-based",
       "value": 0.5
     },
     {
-      "source": "not cruelty-free",
-      "target": "water-based",
+      "source": "cerave isn't cruelty-free",
+      "target": "not designed for makeup removal",
       "value": 0.5
     },
     {
-      "source": "not cruelty-free",
-      "target": "micellar waters",
+      "source": "good morning cleanser",
+      "target": "washes off makeup",
       "value": 0.5
     },
     {
-      "source": "makeup remover",
-      "target": "waterproof mascara",
+      "source": "good morning cleanser",
+      "target": "preferred over foaming cleaner",
       "value": 0.5
     },
     {
-      "source": "makeup remover",
-      "target": "eczema",
+      "source": "good morning cleanser",
+      "target": "needs wet skin",
       "value": 0.5
     },
     {
-      "source": "makeup remover",
-      "target": "micellar waters",
+      "source": "good morning cleanser",
+      "target": "makes me itchy",
       "value": 0.5
     },
     {
-      "source": "foam up",
-      "target": "eczema",
+      "source": "makes me itchy",
+      "target": "needs wet skin",
       "value": 0.5
     },
     {
-      "source": "foam up",
-      "target": "ulta",
+      "source": "makes me itchy",
+      "target": "good morning cleanser",
       "value": 0.5
     },
     {
-      "source": "foam up",
-      "target": "waterproof mascara",
+      "source": "makes me itchy",
+      "target": "it's water-based",
       "value": 0.5
     },
     {
-      "source": "foam up",
-      "target": "water-based",
+      "source": "not suitable for oily skin",
+      "target": "needs wet skin",
       "value": 0.5
     },
     {
-      "source": "water-based",
-      "target": "micellar waters",
+      "source": "not suitable for oily skin",
+      "target": "not designed for makeup removal",
       "value": 0.5
     },
     {
-      "source": "animal tests",
-      "target": "micellar waters",
+      "source": "not suitable for oily skin",
+      "target": "requires emulsification",
       "value": 0.5
     },
     {
-      "source": "animal tests",
-      "target": "water-based",
+      "source": "not designed for makeup removal",
+      "target": "not suitable for oily skin",
       "value": 0.5
     },
     {
-      "source": "animal tests",
-      "target": "ulta",
+      "source": "washes off makeup",
+      "target": "good morning cleanser",
       "value": 0.5
     },
     {
-      "source": "eczema",
-      "target": "waterproof mascara",
+      "source": "it's water-based",
+      "target": "needs wet skin",
       "value": 0.5
     },
     {
-      "source": "eczema",
-      "target": "ulta",
+      "source": "it's water-based",
+      "target": "makes me itchy",
       "value": 0.5
     },
     {
-      "source": "waterproof mascara",
-      "target": "water-based",
+      "source": "available in australia",
+      "target": "needs wet skin",
       "value": 0.5
     },
     {
-      "source": "ceramides",
-      "target": "eczema",
+      "source": "available in australia",
+      "target": "it's water-based",
       "value": 0.5
     },
     {
-      "source": "ceramides",
-      "target": "water-based",
+      "source": "available in australia",
+      "target": "cerave isn't cruelty-free",
       "value": 0.5
     },
     {
-      "source": "ceramides",
-      "target": "ulta",
+      "source": "available in australia",
+      "target": "supports animal testing",
+      "value": 0.5
+    },
+    {
+      "source": "needs wet skin",
+      "target": "not suitable for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "needs wet skin",
+      "target": "makes me itchy",
+      "value": 0.5
+    },
+    {
+      "source": "needs wet skin",
+      "target": "washes off makeup",
+      "value": 0.5
+    },
+    {
+      "source": "supports animal testing",
+      "target": "it's water-based",
+      "value": 0.5
+    },
+    {
+      "source": "supports animal testing",
+      "target": "available in australia",
+      "value": 0.5
+    },
+    {
+      "source": "supports animal testing",
+      "target": "needs wet skin",
+      "value": 0.5
+    },
+    {
+      "source": "requires emulsification",
+      "target": "not suitable for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "requires emulsification",
+      "target": "needs wet skin",
+      "value": 0.5
+    },
+    {
+      "source": "requires emulsification",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "requires emulsification",
+      "target": "makes me itchy",
       "value": 0.5
     }
   ]

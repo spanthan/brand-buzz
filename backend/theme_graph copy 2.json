@@ -1,0 +1,336 @@
+{
+  "nodes": [
+    {
+      "keyword": "not cruelty-free",
+      "weight": 3,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "cruelty tests animals",
+      "weight": 6,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "cleans oily skin",
+      "weight": 5,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "itchy skin",
+      "weight": 2,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "prefer this over cerave foaming cleaner",
+      "weight": 7,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "not suitable for makeup removal",
+      "weight": 4,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "doesn't foam on dry skin",
+      "weight": 8,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "needs water to foam",
+      "weight": 10,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "makes it foamy",
+      "weight": 9,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "foams up",
+      "weight": 5,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "water-based",
+      "weight": 2,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "available in australia but not us",
+      "weight": 4,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "requires damp skin",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "eczema not solved by cerave",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "combines with micellar waters",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "too drying or sticky",
+      "weight": 1,
+      "sentiment": "negative"
+    }
+  ],
+  "links": [
+    {
+      "source": "cruelty tests animals",
+      "target": "not cruelty-free",
+      "value": 3
+    },
+    {
+      "source": "cleans oily skin",
+      "target": "itchy skin",
+      "value": 2
+    },
+    {
+      "source": "not suitable for makeup removal",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 2
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "foams up",
+      "value": 5
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "makes it foamy",
+      "value": 7
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "needs water to foam",
+      "value": 7
+    },
+    {
+      "source": "foams up",
+      "target": "makes it foamy",
+      "value": 5
+    },
+    {
+      "source": "foams up",
+      "target": "needs water to foam",
+      "value": 5
+    },
+    {
+      "source": "makes it foamy",
+      "target": "needs water to foam",
+      "value": 8
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "requires damp skin",
+      "value": 1
+    },
+    {
+      "source": "needs water to foam",
+      "target": "requires damp skin",
+      "value": 1
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 2
+    },
+    {
+      "source": "makes it foamy",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 3
+    },
+    {
+      "source": "needs water to foam",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 3
+    },
+    {
+      "source": "cleans oily skin",
+      "target": "eczema not solved by cerave",
+      "value": 1
+    },
+    {
+      "source": "eczema not solved by cerave",
+      "target": "itchy skin",
+      "value": 1
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "too drying or sticky",
+      "value": 1
+    },
+    {
+      "source": "foams up",
+      "target": "too drying or sticky",
+      "value": 1
+    },
+    {
+      "source": "makes it foamy",
+      "target": "too drying or sticky",
+      "value": 1
+    },
+    {
+      "source": "needs water to foam",
+      "target": "too drying or sticky",
+      "value": 1
+    },
+    {
+      "source": "cleans oily skin",
+      "target": "doesn't foam on dry skin",
+      "value": 1
+    },
+    {
+      "source": "cleans oily skin",
+      "target": "makes it foamy",
+      "value": 1
+    },
+    {
+      "source": "cleans oily skin",
+      "target": "not suitable for makeup removal",
+      "value": 1
+    },
+    {
+      "source": "cleans oily skin",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 1
+    },
+    {
+      "source": "doesn't foam on dry skin",
+      "target": "not suitable for makeup removal",
+      "value": 1
+    },
+    {
+      "source": "makes it foamy",
+      "target": "not suitable for makeup removal",
+      "value": 1
+    },
+    {
+      "source": "needs water to foam",
+      "target": "water-based",
+      "value": 1
+    },
+    {
+      "source": "prefer this over cerave foaming cleaner",
+      "target": "water-based",
+      "value": 1
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "requires damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "cruelty tests animals",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "cruelty tests animals",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "cruelty tests animals",
+      "target": "requires damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "itchy skin",
+      "target": "requires damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "itchy skin",
+      "target": "doesn't foam on dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "water-based",
+      "target": "combines with micellar waters",
+      "value": 0.5
+    },
+    {
+      "source": "water-based",
+      "target": "requires damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia but not us",
+      "target": "not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia but not us",
+      "target": "doesn't foam on dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia but not us",
+      "target": "foams up",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia but not us",
+      "target": "combines with micellar waters",
+      "value": 0.5
+    },
+    {
+      "source": "requires damp skin",
+      "target": "too drying or sticky",
+      "value": 0.5
+    },
+    {
+      "source": "requires damp skin",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "eczema not solved by cerave",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 0.5
+    },
+    {
+      "source": "eczema not solved by cerave",
+      "target": "requires damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "combines with micellar waters",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "combines with micellar waters",
+      "target": "needs water to foam",
+      "value": 0.5
+    },
+    {
+      "source": "combines with micellar waters",
+      "target": "prefer this over cerave foaming cleaner",
+      "value": 0.5
+    },
+    {
+      "source": "combines with micellar waters",
+      "target": "requires damp skin",
+      "value": 0.5
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "nodes": [
+    {
+      "keyword": "cruelty tests",
+      "weight": 6,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "not cruelty-free",
+      "weight": 3,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "water-based cleanser",
+      "weight": 4,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "itchy skin",
+      "weight": 2,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "oily skin",
+      "weight": 2,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "makeup remover",
+      "weight": 3,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "supposed to foam",
+      "weight": 10,
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "foams up",
+      "weight": 5,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "requires water",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "animal testing",
+      "weight": 4,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "sticky skin",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "dry skin",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "eczema",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "emulsify hands",
+      "weight": 1,
+      "sentiment": "negative"
+    }
+  ],
+  "links": [
+    {
+      "source": "cruelty tests",
+      "target": "not cruelty-free",
+      "value": 3
+    },
+    {
+      "source": "itchy skin",
+      "target": "oily skin",
+      "value": 2
+    },
+    {
+      "source": "foams up",
+      "target": "supposed to foam",
+      "value": 5
+    },
+    {
+      "source": "animal testing",
+      "target": "cruelty tests",
+      "value": 4
+    },
+    {
+      "source": "dry skin",
+      "target": "eczema",
+      "value": 1
+    },
+    {
+      "source": "dry skin",
+      "target": "itchy skin",
+      "value": 1
+    },
+    {
+      "source": "dry skin",
+      "target": "oily skin",
+      "value": 1
+    },
+    {
+      "source": "dry skin",
+      "target": "sticky skin",
+      "value": 1
+    },
+    {
+      "source": "eczema",
+      "target": "itchy skin",
+      "value": 1
+    },
+    {
+      "source": "eczema",
+      "target": "oily skin",
+      "value": 1
+    },
+    {
+      "source": "eczema",
+      "target": "sticky skin",
+      "value": 1
+    },
+    {
+      "source": "itchy skin",
+      "target": "sticky skin",
+      "value": 1
+    },
+    {
+      "source": "oily skin",
+      "target": "sticky skin",
+      "value": 1
+    },
+    {
+      "source": "animal testing",
+      "target": "not cruelty-free",
+      "value": 1
+    },
+    {
+      "source": "cruelty tests",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "cruelty tests",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "requires water",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "makeup remover",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "makeup remover",
+      "target": "oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "makeup remover",
+      "target": "sticky skin",
+      "value": 0.5
+    },
+    {
+      "source": "makeup remover",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "supposed to foam",
+      "target": "sticky skin",
+      "value": 0.5
+    },
+    {
+      "source": "supposed to foam",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "supposed to foam",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up",
+      "target": "sticky skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up",
+      "target": "oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "requires water",
+      "target": "dry skin",
+      "value": 0.5
+    },
+    {
+      "source": "requires water",
+      "target": "supposed to foam",
+      "value": 0.5
+    },
+    {
+      "source": "requires water",
+      "target": "not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "animal testing",
+      "target": "requires water",
+      "value": 0.5
+    },
+    {
+      "source": "animal testing",
+      "target": "itchy skin",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify hands",
+      "target": "sticky skin",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify hands",
+      "target": "eczema",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify hands",
+      "target": "oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify hands",
+      "target": "dry skin",
+      "value": 0.5
+    }
+  ]
+}
