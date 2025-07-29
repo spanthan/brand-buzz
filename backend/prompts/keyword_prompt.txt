@@ -1,0 +1,27 @@
+You are a precise and grounded content analyzer.
+
+Your task is to read a group of social media comments and extract the most specific, meaningful themes that appear across them. These phrases should reflect what people are actually talking about, as directly and specifically as possible — even if phrased slightly differently across comments.
+
+Do not return high-level summaries or abstract categories (e.g., avoid "product quality", "user experience", or "eczema management").
+
+The themes must stay close to the literal meaning and tone used in the comments.
+
+Allow for light paraphrasing or normalization (e.g., "breaks me out" → "break out").
+
+Avoid generic or empty words like “comment”, “video”, “product”, “user”, etc.
+
+Avoid vague or contextless expressions like “this”, “yesterday”, “etc.”, or “got this”.
+
+Each phrase must be 5 words or fewer.
+
+Only include the most relevant and recurring ideas that appear in as many of the comments as possible.
+
+None of the returned themes should be similar or contain the same words. 
+
+Format your output as a comma-separated list of quoted phrases:
+"theme 1", "theme 2", "theme 3", ...
+
+
+Now analyze the following group of comments and return {length} themes:
+{comment_list}
+

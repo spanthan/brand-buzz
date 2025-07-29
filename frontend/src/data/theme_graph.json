@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "id": "cerave not cruelty-free",
+      "weight": 6,
+      "sentiment": "negative"
+    },
+    {
+      "id": "cerave tested on animals",
+      "weight": 6,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "water-based cleanser",
+      "weight": 4,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "cleanser not a soap",
+      "weight": 6,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "break out on oily skin",
+      "weight": 2,
+      "sentiment": "negative"
+    },
+    {
+      "id": "not designed for makeup removal",
+      "weight": 2,
+      "sentiment": "positive"
+    },
+    {
+      "id": "foam only with water",
+      "weight": 11,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "foams up when used correctly",
+      "weight": 10,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "not suitable for tinted products",
+      "weight": 1,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "not available in the us",
+      "weight": 3,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "needs to be used with water",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "id": "must use with damp skin",
+      "weight": 1,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "must emulsify in hands",
+      "weight": 1,
+      "sentiment": "neutral"
+    }
+  ],
+  "links": [
+    {
+      "source": "cerave not cruelty-free",
+      "target": "cerave tested on animals",
+      "value": 4
+    },
+    {
+      "source": "cleanser not a soap",
+      "target": "water-based cleanser",
+      "value": 3
+    },
+    {
+      "source": "foam only with water",
+      "target": "foams up when used correctly",
+      "value": 9
+    },
+    {
+      "source": "foam only with water",
+      "target": "must use with damp skin",
+      "value": 1
+    },
+    {
+      "source": "cleanser not a soap",
+      "target": "foam only with water",
+      "value": 1
+    },
+    {
+      "source": "foam only with water",
+      "target": "water-based cleanser",
+      "value": 1
+    },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "cleanser not a soap",
+      "value": 0.5
+    },
+    {
+      "source": "cerave tested on animals",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "cerave tested on animals",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "cerave tested on animals",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "cleanser not a soap",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "cleanser not a soap",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "must emulsify in hands",
+      "value": 0.5
+    },
+    {
+      "source": "not designed for makeup removal",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up when used correctly",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up when used correctly",
+      "target": "break out on oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up when used correctly",
+      "target": "must emulsify in hands",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "foam only with water",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "cerave not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "not suitable for tinted products",
+      "value": 0.5
+    },
+    {
+      "source": "must emulsify in hands",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "must emulsify in hands",
+      "target": "cleanser not a soap",
+      "value": 0.5
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+You are a helpful and precise assistant.
+
+Given the following comment:
+"{comment}"
+
+And this list of possible keywords:
+{keyword_list}
+
+Your task is to identify which keywords clearly apply to the comment, based on both their meaning and their sentiment.
+
+⚠️ Do NOT match a keyword if its sentiment or polarity contradicts what the comment says. For example:
+- If the comment says “they test on animals”, do NOT match it with “not tested on animals”.
+- If the comment says something foams up well, do NOT match it with “doesn’t foam”.
+
+✅ Only return keywords that are explicitly supported by the comment’s meaning and tone.
+
+Return only a **comma-separated list of keywords** from the given list that accurately apply to the comment — no explanations or extra text.

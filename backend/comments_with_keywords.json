@@ -1,0 +1,525 @@
+[
+  {
+    "text":"I'm thrilled to death of honor to receive this great review from you!",
+    "sentiment":"positive",
+    "keywords":[
+      "thrilled to receive",
+      "honor to receive",
+      "great review"
+    ]
+  },
+  {
+    "text":"Unfortunately, CeraVe is not cruelty-free.",
+    "sentiment":"negative",
+    "keywords":[
+      "cerave not cruelty-free",
+      "cruelty-free issue",
+      "not vegan-friendly"
+    ]
+  },
+  {
+    "text":"It's a water-based cleanser; I got it yesterday, thinking it was a cleansing oil.",
+    "sentiment":"neutral",
+    "keywords":[
+      "water-based cleanser",
+      "mistaken identity",
+      "yesterday's purchase"
+    ]
+  },
+  {
+    "text":"America not having the good stuff is so annoying! I really need that!",
+    "sentiment":"negative",
+    "keywords":[
+      "good stuff missing",
+      "annoying lack",
+      "really needs it"
+    ]
+  },
+  {
+    "text":"It's better to use a second cleanser.",
+    "sentiment":"neutral",
+    "keywords":[
+      "dual cleansing needed",
+      "second cleanser recommended",
+      "single cleanse not enough"
+    ]
+  },
+  {
+    "text":"My oily skin is feeling like it's crying.",
+    "sentiment":"negative",
+    "keywords":[
+      "oily skin feeling sensitive",
+      "like crying",
+      "skin pain"
+    ]
+  },
+  {
+    "text":"I don't know why many of my CeraVe cleansers say it's a soap. If I read the thing in French, it says cr\u00e8me. And it doesn't foam, but they tell me it is a cleanser anyway.",
+    "sentiment":"negative",
+    "keywords":[
+      "not a soap",
+      "foamless",
+      "mislabeling"
+    ]
+  },
+  {
+    "text":"I only use balms to remove my makeup; Clinique is good, but expensive, while the Soap & Glory one is great.",
+    "sentiment":"positive",
+    "keywords":[
+      "remove makeup with balms",
+      "clinique too expensive",
+      "soap & glory a great option"
+    ]
+  },
+  {
+    "text":"We have this in Australia! Not designed to be used as a makeup remover, but it does a good job of removing it anyway.",
+    "sentiment":"positive",
+    "keywords":[
+      "used for makeup removal",
+      "good at cleaning",
+      "not marketed for"
+    ]
+  },
+  {
+    "text":"I definitely prefer this over the CeraVe Foaming Cleaner; FYI, that one burns my eyes.",
+    "sentiment":"neutral",
+    "keywords":[
+      "cerave foaming cleaner",
+      "burns eyes",
+      "prefer alternative"
+    ]
+  },
+  {
+    "text":"Actually, I've been using this for forever, and it does foam up quite a bit. You just need some more water!",
+    "sentiment":"positive",
+    "keywords":[
+      "foam up",
+      "need more water",
+      "long-term use"
+    ]
+  },
+  {
+    "text":"I think it would be fine in a double cleanse if all you use is sunscreen, but anything with any tint isn't the best option.",
+    "sentiment":"neutral",
+    "keywords":[
+      "double cleanse suitable",
+      "sunscreen only works",
+      "tinted products not good"
+    ]
+  },
+  {
+    "text":"Mine does foam up; you need to add more water than just damp skin for it to foam, though.",
+    "sentiment":"neutral",
+    "keywords":[
+      "foam up",
+      "add more water",
+      "damp skin"
+    ]
+  },
+  {
+    "text":"Rub it together with water in your hands first; it does actually foam up a bit and work better.",
+    "sentiment":"positive",
+    "keywords":[
+      "rub with water",
+      "foam up",
+      "works better"
+    ]
+  },
+  {
+    "text":"It's water-based.",
+    "sentiment":"neutral",
+    "keywords":[
+      "water-based",
+      "based on water",
+      "not oil-based"
+    ]
+  },
+  {
+    "text":"I can't believe we've had it in Australia for so long before the US. Glad you like it!",
+    "sentiment":"positive",
+    "keywords":[
+      "australia first",
+      "us later",
+      "long wait"
+    ]
+  },
+  {
+    "text":"I don't really know why they won't make this available in the US! Thanks for the demo.",
+    "sentiment":"neutral",
+    "keywords":[
+      "not available in us",
+      "democratize access"
+    ]
+  },
+  {
+    "text":"Wait, what? I've been using it with water; I've been using it all wrong.",
+    "sentiment":"negative",
+    "keywords":[
+      "using with water",
+      "using it wrong",
+      "misunderstood instructions"
+    ]
+  },
+  {
+    "text":"You have to foam it up in your hand.",
+    "sentiment":"neutral",
+    "keywords":[
+      "foam it up",
+      "hand technique",
+      "personal approach"
+    ]
+  },
+  {
+    "text":"You put it on, add water, and it foams; that's why they say damp skin isn't necessary.",
+    "sentiment":"neutral",
+    "keywords":[
+      "foam formation",
+      "damp skin not needed",
+      "application process"
+    ]
+  },
+  {
+    "text":"I have cream that I can foam, and I love it! I add water to my cleanser to make it foam.",
+    "sentiment":"positive",
+    "keywords":[
+      "foam with cream",
+      "add water to cleanse"
+    ]
+  },
+  {
+    "text":"I've got this; it's perfect.",
+    "sentiment":"positive",
+    "keywords":[
+      "i've got this",
+      "perfect"
+    ]
+  },
+  {
+    "text":"I'm curious about the new Isdin Oil Cleanser.",
+    "sentiment":"neutral",
+    "keywords":[
+      "isdn oil cleanser",
+      "new product",
+      "curious about"
+    ]
+  },
+  {
+    "text":"You are naturally very pretty.",
+    "sentiment":"positive",
+    "keywords":[
+      "naturally very pretty"
+    ]
+  },
+  {
+    "text":"It's now here in the US! Yay!",
+    "sentiment":"positive",
+    "keywords":[
+      "it's here",
+      "us arrival",
+      "excitement"
+    ]
+  },
+  {
+    "text":"This product is like a cleansing oil.",
+    "sentiment":"positive",
+    "keywords":[
+      "cleansing oil",
+      "product likeness",
+      "like a"
+    ]
+  },
+  {
+    "text":"They are conducting animal tests.",
+    "sentiment":"neutral",
+    "keywords":[
+      "animal tests",
+      "conducting experiments",
+      "cruelty to animals"
+    ]
+  },
+  {
+    "text":"I use it with a muslin cloth and find it foams up much less with that.",
+    "sentiment":"neutral",
+    "keywords":[
+      "foams up less",
+      "muslin cloth",
+      "use with cloth"
+    ]
+  },
+  {
+    "text":"That looks like it will take off lash extensions.",
+    "sentiment":"neutral",
+    "keywords":[
+      "take off lash extensions",
+      "lash removal",
+      "removal method"
+    ]
+  },
+  {
+    "text":"Ugh, I have eczema and combination skin; CeraVe products either dry me out or leave me feeling sticky. I hate it.",
+    "sentiment":"negative",
+    "keywords":[
+      "dry me out",
+      "sticky feel",
+      "eczema issues"
+    ]
+  },
+  {
+    "text":"It is within us that I have it, and you can find it at Target, Walmart, Amazon, etc.",
+    "sentiment":"positive",
+    "keywords":[
+      "within us",
+      "target store",
+      "walmart store",
+      "amazon online"
+    ]
+  },
+  {
+    "text":"We need a waterproof mascara test!",
+    "sentiment":"neutral",
+    "keywords":[
+      "waterproof mascara test",
+      "need it",
+      "test required"
+    ]
+  },
+  {
+    "text":"Please provide the correct amount of micellar waters, as it has been sold out everywhere.",
+    "sentiment":"negative",
+    "keywords":[
+      "correct amount",
+      "micellar waters",
+      "sold out everywhere"
+    ]
+  },
+  {
+    "text":"We love ceramides and must include them in our skin-care routine; we also must use skin care products that are gentle on our skin.",
+    "sentiment":"positive",
+    "keywords":[
+      "ceramide inclusion",
+      "gentle skin care",
+      "must-have products"
+    ]
+  },
+  {
+    "text":"I brought it to take with me on vacation because I hoped I wouldn't need anything else, so I'm happy with this.",
+    "sentiment":"positive",
+    "keywords":[
+      "vacation companion",
+      "self-contained solution",
+      "happy experience"
+    ]
+  },
+  {
+    "text":"Hi, what do you think of the CeraVe moisturizer? I'm looking for a really good one and was wondering if it's worth it.",
+    "sentiment":"positive",
+    "keywords":[
+      "looking for a good",
+      "cerave moisturizer",
+      "worth it"
+    ]
+  },
+  {
+    "text":"Wow, it looks good early.",
+    "sentiment":"positive",
+    "keywords":[
+      "looks good early"
+    ]
+  },
+  {
+    "text":"It's time for us now! Let's run to Ulta, guys!",
+    "sentiment":"positive",
+    "keywords":[
+      "run to ulta",
+      "ulta shopping trip",
+      "now is the time"
+    ]
+  },
+  {
+    "text":"You're supposed to rub it between your hands to make it foam up.",
+    "sentiment":"neutral",
+    "keywords":[
+      "rub between hands",
+      "make foam up",
+      "hands-only application"
+    ]
+  },
+  {
+    "text":"I could see this as a great morning cleanser; it looks really mild.",
+    "sentiment":"positive",
+    "keywords":[
+      "great morning cleanser",
+      "looks mild",
+      "could work"
+    ]
+  },
+  {
+    "text":"We need this in the U.S., please!",
+    "sentiment":"neutral",
+    "keywords":[
+      "need it here",
+      "u.s. availability",
+      "please make it"
+    ]
+  },
+  {
+    "text":"Wait, America doesn't have CeraVe.",
+    "sentiment":"neutral",
+    "keywords":[
+      "cerave not available in us",
+      "america lacks product",
+      "no access"
+    ]
+  },
+  {
+    "text":"You should try this.",
+    "sentiment":"positive",
+    "keywords":[
+      "try this",
+      "unsolicited advice",
+      "recommendation made"
+    ]
+  },
+  {
+    "text":"You need to first take water and apply it to your face, then do the cleanse I got today.",
+    "sentiment":"neutral",
+    "keywords":[
+      "apply water to face",
+      "first step",
+      "cleansing process"
+    ]
+  },
+  {
+    "text":"It does foam if you use it on clean skin, meaning no makeup is on.",
+    "sentiment":"neutral",
+    "keywords":[
+      "foams on clean skin",
+      "no makeup allowed",
+      "meaning requires context"
+    ]
+  },
+  {
+    "text":"The cat needs proper skin care for its future.",
+    "sentiment":"neutral",
+    "keywords":[
+      "proper skin care",
+      "future of cat",
+      "cat's needs"
+    ]
+  },
+  {
+    "text":"CeraVe is toxic. Why does everyone keep suggesting it? We need to demand better from these companies.",
+    "sentiment":"negative",
+    "keywords":[
+      "cerave is toxic",
+      "demand better",
+      "companies toxic"
+    ]
+  },
+  {
+    "text":"You're supposed to emulsify it in your hands before applying it to your face.",
+    "sentiment":"neutral",
+    "keywords":[
+      "emulsify beforehand",
+      "hands application",
+      "face use"
+    ]
+  },
+  {
+    "text":"It foams on me!",
+    "sentiment":"neutral",
+    "keywords":[
+      "foams on me",
+      "personal experience",
+      "skin reaction"
+    ]
+  },
+  {
+    "text":"Hey everyone, we sell cool, trendy jewelry for an affordable price, and I would really appreciate it if you could support my small business.",
+    "sentiment":"positive",
+    "keywords":[
+      "trendy jewelry",
+      "affordable price",
+      "support small business"
+    ]
+  },
+  {
+    "text":"The product is a water-based cleanser. Its name can be confusing, but it's essential to note that you must use water to create foam.",
+    "sentiment":"neutral",
+    "keywords":[
+      "water-based cleanser",
+      "create foam with water",
+      "name can be confusing"
+    ]
+  },
+  {
+    "text":"Wow, you don't even need makeup! It looks like you're wearing it even when it's all washed off!",
+    "sentiment":"positive",
+    "keywords":[
+      "wearing makeup look",
+      "makeup effect without wear"
+    ]
+  },
+  {
+    "text":"Your face and hands are supposed to be wet, and then you kind of rub it into your hands; it gets foamy.",
+    "sentiment":"neutral",
+    "keywords":[
+      "face wet",
+      "hands wet",
+      "gets foamy"
+    ]
+  },
+  {
+    "text":"To use this, follow these steps: Step 1, place it in your hands. Step 2, add water to your hands to create a lather. Step 3, now cleanse your face. You're welcome.",
+    "sentiment":"neutral",
+    "keywords":[
+      "place it in your hands",
+      "add water for lather",
+      "cleanse your face"
+    ]
+  },
+  {
+    "text":"Cerbae are tested on animals.",
+    "sentiment":"neutral",
+    "keywords":[
+      "cerbae tested on animals",
+      "animal testing",
+      "product cruelty"
+    ]
+  },
+  {
+    "text":"CeraVe is not cruelty-free.",
+    "sentiment":"negative",
+    "keywords":[
+      "cerave not cruelty-free",
+      "not cruelty-free",
+      "cruelty-free"
+    ]
+  },
+  {
+    "text":"It's not cruelty-free! Oh, did you do the eye test? What about all the animals that were tested?!",
+    "sentiment":"negative",
+    "keywords":[
+      "not cruelty-free",
+      "eye test",
+      "animal testing"
+    ]
+  },
+  {
+    "text":"This is $17 at CareToBeauty, and they ship to the US.",
+    "sentiment":"neutral",
+    "keywords":[
+      "priced at $17",
+      "ships to us"
+    ]
+  },
+  {
+    "text":"They test animals!",
+    "sentiment":"negative",
+    "keywords":[
+      "test animals",
+      "animal cruelty",
+      "ethics issue"
+    ]
+  }
+]

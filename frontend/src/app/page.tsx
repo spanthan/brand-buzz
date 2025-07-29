@@ -7,6 +7,7 @@ import { BaseType } from "d3";
 interface GraphNode extends d3.SimulationNodeDatum {
   id: string;
   weight: number;
+  sentiment?: string;
 }
 
 interface GraphLink extends d3.SimulationLinkDatum<GraphNode> {
@@ -17,38 +18,233 @@ interface GraphLink extends d3.SimulationLinkDatum<GraphNode> {
 
 const data: { nodes: GraphNode[]; links: GraphLink[] } = {
   nodes: [
-    { id: "latte makeup", weight: 10 },
-    { id: "broccoli Freckles", weight: 6 },
-    { id: "micro beauty", weight: 8 },
-    { id: "pregnant and nursing people", weight: 7 },
-    { id: "pearl Skin", weight: 14 },
-    { id: "Face yoga", weight: 9 },
-    { id: "boyfriend blush", weight: 12 },
-    { id: "dark skin", weight: 11 },
-    { id: "sugar plum fairy", weight: 6 },
-    { id: "olive skin", weight: 10 },
-    { id: "sunset blush", weight: 8 },
-    { id: "luminous complexion", weight: 7 },
+    {
+      "id": "cerave not cruelty-free",
+      "weight": 6,
+      "sentiment": "negative"
+    },
+    {
+      "id": "cerave tested on animals",
+      "weight": 6,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "water-based cleanser",
+      "weight": 4,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "cleanser not a soap",
+      "weight": 6,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "break out on oily skin",
+      "weight": 2,
+      "sentiment": "negative"
+    },
+    {
+      "id": "not designed for makeup removal",
+      "weight": 2,
+      "sentiment": "positive"
+    },
+    {
+      "id": "foam only with water",
+      "weight": 11,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "foams up when used correctly",
+      "weight": 10,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "not suitable for tinted products",
+      "weight": 1,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "not available in the us",
+      "weight": 3,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "needs to be used with water",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "id": "must use with damp skin",
+      "weight": 1,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "must emulsify in hands",
+      "weight": 1,
+      "sentiment": "neutral"
+    }
   ],
   links: [
-    { source: "latte makeup", target: "Face yoga", value: 3 },
-    { source: "latte makeup", target: "sunset blush", value: 2 },
-    { source: "latte makeup", target: "boyfriend blush", value: 2 },
-    { source: "pearl Skin", target: "boyfriend blush", value: 4 },
-    { source: "pearl Skin", target: "dark skin", value: 4 },
-    { source: "dark skin", target: "olive skin", value: 3 },
-    { source: "pregnant and nursing people", target: "micro beauty", value: 2 },
-    { source: "pregnant and nursing people", target: "pearl Skin", value: 2 },
-    { source: "sunset blush", target: "luminous complexion", value: 2 },
-    { source: "sugar plum fairy", target: "Face yoga", value: 2 },
-    { source: "luminous complexion", target: "sugar plum fairy", value: 1 },
-    { source: "sunset blush", target: "boyfriend blush", value: 1 },
-    { source: "latte makeup", target: "broccoli Freckles", value: 1 },
-    { source: "latte makeup", target: "pregnant and nursing people", value: 1 },
-    { source: "Face yoga", target: "boyfriend blush", value: 2 },
-    { source: "micro beauty", target: "broccoli Freckles", value: 1 },
-    { source: "micro beauty", target: "dark skin", value: 1 },
-    { source: "olive skin", target: "pearl Skin", value: 2 },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "cerave tested on animals",
+      "value": 4
+    },
+    {
+      "source": "cleanser not a soap",
+      "target": "water-based cleanser",
+      "value": 3
+    },
+    {
+      "source": "foam only with water",
+      "target": "foams up when used correctly",
+      "value": 9
+    },
+    {
+      "source": "foam only with water",
+      "target": "must use with damp skin",
+      "value": 1
+    },
+    {
+      "source": "cleanser not a soap",
+      "target": "foam only with water",
+      "value": 1
+    },
+    {
+      "source": "foam only with water",
+      "target": "water-based cleanser",
+      "value": 1
+    },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "cerave not cruelty-free",
+      "target": "cleanser not a soap",
+      "value": 0.5
+    },
+    {
+      "source": "cerave tested on animals",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "cerave tested on animals",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "cerave tested on animals",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "cleanser not a soap",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "cleanser not a soap",
+      "value": 0.5
+    },
+    {
+      "source": "break out on oily skin",
+      "target": "must emulsify in hands",
+      "value": 0.5
+    },
+    {
+      "source": "not designed for makeup removal",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up when used correctly",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up when used correctly",
+      "target": "break out on oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up when used correctly",
+      "target": "must emulsify in hands",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "not suitable for tinted products",
+      "target": "foam only with water",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "cerave not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "needs to be used with water",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "not available in the us",
+      "target": "not suitable for tinted products",
+      "value": 0.5
+    },
+    {
+      "source": "must emulsify in hands",
+      "target": "must use with damp skin",
+      "value": 0.5
+    },
+    {
+      "source": "must emulsify in hands",
+      "target": "cleanser not a soap",
+      "value": 0.5
+    }
   ],
 };
 
@@ -62,6 +258,16 @@ export default function BrandBuzz() {
     const height = 500;
 
     svg.attr("viewBox", [0, 0, width, height]);
+
+    const container = svg.append("g");
+
+    d3.select(svgRef.current as SVGSVGElement).call(
+      d3.zoom<SVGSVGElement, unknown>()
+        .scaleExtent([0.1, 5])
+        .on("zoom", (event) => {
+          container.attr("transform", event.transform.toString());
+        })
+    );
 
     const customGradient = d3.scaleLinear<string>()
       .domain([0, 0.5, 1])
@@ -89,7 +295,7 @@ export default function BrandBuzz() {
       .force("charge", d3.forceManyBody().strength(-200))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-    const link = svg
+    const link = container
       .append("g")
       .attr("stroke", "#ffffffcc")
       .attr("stroke-opacity", 0.4)
@@ -99,7 +305,24 @@ export default function BrandBuzz() {
       .join("line")
       .attr("stroke-width", (d) => linkScale(d.value));
 
-    const nodeGroup = svg.append("g").attr("stroke", "#fff").attr("stroke-width", 1.5);
+    const tooltip = d3.select("body")
+      .append("div")
+      .style("position", "absolute")
+      .style("padding", "6px 12px")
+      .style("background", "#222")
+      .style("color", "#fff")
+      .style("border-radius", "4px")
+      .style("font-size", "12px")
+      .style("pointer-events", "none")
+      .style("opacity", 0);
+    
+    const sentimentMap: Record<string, string> = {
+        positive: "🟢 Positive",
+        neutral: "🟡 Neutral",
+        negative: "🔴 Negative"
+      };
+
+    const nodeGroup = container.append("g").attr("stroke", "#fff").attr("stroke-width", 1.5);
     const nodes = nodeGroup
       .selectAll<SVGCircleElement, GraphNode>("circle")
       .data(data.nodes)
@@ -128,9 +351,28 @@ export default function BrandBuzz() {
           d.fx = null;
           d.fy = null;
         })
-    );
+    )
+    .on("mouseover", (event, d) => {
+      tooltip
+        .style("opacity", 1)
+        .style("left", `${event.pageX + 10}px`)
+        .style("top", `${event.pageY + 10}px`)
+        .html(`
+          <strong>${d.id}</strong><br/>
+          Sentiment: ${sentimentMap[d.sentiment || "neutral"]}<br/>
+          Mentions: <strong>${d.weight}</strong>
+        `);
+    })
+    .on("mousemove", (event) => {
+      tooltip
+        .style("left", `${event.pageX + 10}px`)
+        .style("top", `${event.pageY + 10}px`);
+    })
+    .on("mouseout", () => {
+      tooltip.style("opacity", 0);
+    });
 
-    const label = svg
+    const label = container
       .append("g")
       .selectAll("text")
       .data(data.nodes)

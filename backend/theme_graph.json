@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "cerave products",
+      "weight": 7,
+      "sentiment": "negative"
+    },
+    {
+      "id": "not cruelty-free",
+      "weight": 3,
+      "sentiment": "negative"
+    },
+    {
+      "id": "makeup remover",
+      "weight": 3,
+      "sentiment": "positive"
+    },
+    {
+      "id": "foam up",
+      "weight": 5,
+      "sentiment": "negative"
+    },
+    {
+      "id": "water-based",
+      "weight": 2,
+      "sentiment": "positive"
+    },
+    {
+      "id": "animal tests",
+      "weight": 4,
+      "sentiment": "negative"
+    },
+    {
+      "id": "eczema",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "id": "waterproof mascara",
+      "weight": 1,
+      "sentiment": "positive"
+    },
+    {
+      "id": "micellar waters",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "id": "ceramides",
+      "weight": 1,
+      "sentiment": "positive"
+    },
+    {
+      "id": "ulta",
+      "weight": 1,
+      "sentiment": "positive"
+    }
+  ],
+  "links": [
+    {
+      "source": "cerave products",
+      "target": "not cruelty-free",
+      "value": 2
+    },
+    {
+      "source": "ceramides",
+      "target": "cerave products",
+      "value": 1
+    },
+    {
+      "source": "animal tests",
+      "target": "not cruelty-free",
+      "value": 1
+    },
+    {
+      "source": "cerave products",
+      "target": "makeup remover",
+      "value": 0.5
+    },
+    {
+      "source": "cerave products",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "micellar waters",
+      "value": 0.5
+    },
+    {
+      "source": "makeup remover",
+      "target": "waterproof mascara",
+      "value": 0.5
+    },
+    {
+      "source": "makeup remover",
+      "target": "eczema",
+      "value": 0.5
+    },
+    {
+      "source": "makeup remover",
+      "target": "micellar waters",
+      "value": 0.5
+    },
+    {
+      "source": "foam up",
+      "target": "eczema",
+      "value": 0.5
+    },
+    {
+      "source": "foam up",
+      "target": "ulta",
+      "value": 0.5
+    },
+    {
+      "source": "foam up",
+      "target": "waterproof mascara",
+      "value": 0.5
+    },
+    {
+      "source": "foam up",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "water-based",
+      "target": "micellar waters",
+      "value": 0.5
+    },
+    {
+      "source": "animal tests",
+      "target": "micellar waters",
+      "value": 0.5
+    },
+    {
+      "source": "animal tests",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "animal tests",
+      "target": "ulta",
+      "value": 0.5
+    },
+    {
+      "source": "eczema",
+      "target": "waterproof mascara",
+      "value": 0.5
+    },
+    {
+      "source": "eczema",
+      "target": "ulta",
+      "value": 0.5
+    },
+    {
+      "source": "waterproof mascara",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "ceramides",
+      "target": "eczema",
+      "value": 0.5
+    },
+    {
+      "source": "ceramides",
+      "target": "water-based",
+      "value": 0.5
+    },
+    {
+      "source": "ceramides",
+      "target": "ulta",
+      "value": 0.5
+    }
+  ]
+}

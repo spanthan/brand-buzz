@@ -1,6 +1,5 @@
 import pandas as pd
 import re
-import nltk
 import ollama
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
@@ -9,8 +8,14 @@ import time
 import os
 import json
 import argostranslate.package
-from argostranslate.translate import translate
 from langdetect import detect
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+import numpy as np
+
+# Load once at the top
+tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
+model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 
 def fix_grammar(comment):
     prompt = f'fix the grammar, punctuation, and spelling in this sentence. Only give me back the corrected sentence, no justification or notes: {comment}'
@@ -138,6 +143,27 @@ def classify_comments_with_ollama(comments: List[str]) -> List[str]:
 
     return relevance_labels
 
+
+# def get_sentiment_label(text):
+#     # Tokenize input
+#     inputs = tokenizer(text, return_tensors="pt", truncation=True)
+#     with torch.no_grad():
+#         logits = model(**inputs).logits
+#     scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
+#     labels = ["negative", "neutral", "positive"]
+#     return labels[np.argmax(scores)]
+
+def get_sentiment_label(text):
+    inputs = tokenizer(text, return_tensors="pt", truncation=True)
+    with torch.no_grad():
+        logits = model(**inputs).logits
+    scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
+
+    # Convert 3-class (neg, neutral, pos) to 2-class
+    neg_score = scores[0]
+    pos_score = scores[2]
+    return "positive" if pos_score >= neg_score else "negative"
+
 # === MAIN FUNCTION ===
 def filter_comments(all_comments: List[Dict]) -> pd.DataFrame:
     df = pd.DataFrame(all_comments)
@@ -187,6 +213,7 @@ def filter_comments(all_comments: List[Dict]) -> pd.DataFrame:
 
     # df.to_csv("translated_comments.csv", index=False)
 
+    df["sentiment"] = df["text"].apply(get_sentiment_label)
 
     # === Optionally save removed comments for inspection ===
     mention_only_comments.to_csv("filtered_mentions.csv", index=False)
