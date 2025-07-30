@@ -79,7 +79,7 @@ export default function BrandBuzz() {
             </div>
 
             {/* Right: Comments and TikTok */}
-            <div className="w-[400px] flex flex-col gap-4">
+            <div className="w-full max-w-[400px] flex flex-col gap-4 flex-shrink-0">
               {/* Comments Panel */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg overflow-hidden">
                 <h2 className="text-lg font-semibold px-4 pt-4 text-white">Scraped Comments</h2>
