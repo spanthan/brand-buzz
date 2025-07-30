@@ -7,10 +7,7 @@ from api.db_loader import *
 # FastAPI setup
 app = FastAPI(debug=True)
 
-origins = [
-    "http://localhost:3000",
-    "http://localhost:5173"
-]
+origins = os.getenv("ALLOWED_ORIGINS", "").split(",")
 
 app.add_middleware(
     CORSMiddleware,
