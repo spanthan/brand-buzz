@@ -20,7 +20,7 @@ export default function BrandBuzz() {
   const fetchGraphData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/comments`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/graph`);
       const data = await response.json();
       setGraphData(data);
     } catch (error) {
