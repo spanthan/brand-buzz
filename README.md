@@ -1,4 +1,4 @@
-# Suade Take-Home: TikTok Comment Analysis & Visualization
+# Brand Buzz: TikTok Comment Analysis & Visualization
 
 A full-stack application that analyzes TikTok comments about CeraVe products, extracts themes and keywords using AI/ML, and visualizes the results in an interactive network graph.
 
