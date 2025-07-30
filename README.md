@@ -207,12 +207,12 @@ suade-take-home/
 
 ## 🚀 Deployment
 
-### Frontend (Vercel/Netlify)
+### Frontend (Vercel)
 - Build: `npm run build`
 - Deploy static files
 - Set `NEXT_PUBLIC_API_BASE` to your backend URL
 
-### Backend (Railway/Render)
+### Backend (Render)
 - Deploy Python app with PostgreSQL
 - Set environment variables for database
 - Install Ollama dependencies
