@@ -1,17 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import GraphCanvas from "./components/GraphCanvas";
+import GraphCanvas, { GraphLink, GraphNode } from "./components/GraphCanvas";
 import CommentsPanel from "./components/CommentsPanel";
 import TikTokEmbed from "./components/TikTokEmbed";
 import LoadingOverlay from "./components/LoadingOverlay";
 import { useComments } from "./hooks/useComments";
 
 export default function BrandBuzz() {
-  const [graphData, setGraphData] = useState<{ nodes: any[]; links: any[] }>({ nodes: [], links: [] });
+  const [graphData, setGraphData] = useState<{ nodes: GraphNode[]; links: GraphLink[] }>({
+    nodes: [],
+    links: [],
+  });
   const [selectedKeyword, setSelectedKeyword] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [showComments, setShowComments] = useState(false);
   const [tiktokUrl, setTiktokUrl] = useState("");
   const comments = useComments();
 
