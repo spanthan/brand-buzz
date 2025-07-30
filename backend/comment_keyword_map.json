@@ -8,6 +8,8 @@
     "text": "unfortunately, cerave is not cruelty-free.",
     "sentiment": "negative",
     "keywords": [
+      "cerave limitations",
+      "cruelty concerns",
       "not cruelty-free"
     ]
   },
@@ -15,7 +17,8 @@
     "text": "it's a water-based cleanser; i got it yesterday, thinking it was a cleansing oil.",
     "sentiment": "neutral",
     "keywords": [
-      "good morning cleanser"
+      "mild cleanser appeal",
+      "water-based cleanser"
     ]
   },
   {
@@ -27,15 +30,17 @@
     "text": "it's better to use a second cleanser.",
     "sentiment": "neutral",
     "keywords": [
-      "double cleanse ok",
-      "good morning cleanser"
+      "double cleanse possible",
+      "mild cleanser appeal",
+      "water-based cleanser"
     ]
   },
   {
     "text": "my oily skin is feeling irritable.",
     "sentiment": "negative",
     "keywords": [
-      "irritated skin"
+      "irritated skin",
+      "oily issues"
     ]
   },
   {
@@ -48,16 +53,13 @@
     "sentiment": "positive",
     "keywords": [
       "balms work better",
-      "good for makeup removal"
+      "mild cleanser appeal"
     ]
   },
   {
     "text": "we have this in australia! not designed to be used as a makeup remover, but it does a good job of doing it anyway.",
     "sentiment": "positive",
-    "keywords": [
-      "good for makeup removal",
-      "not suitable for makeup"
-    ]
+    "keywords": []
   },
   {
     "text": "i definitely prefer this over the cerave foaming cleaner; fyi, that one burns my eyes.",
@@ -68,36 +70,36 @@
     "text": "actually, i've been using this for a very long time, and it does foam up quite a bit. you just need some more water!",
     "sentiment": "positive",
     "keywords": [
-      "foams up",
-      "not foamy"
+      "foamy issue"
     ]
   },
   {
     "text": "i think it would be fine in a double cleanse if all you use is sunscreen; however, anything with any tint isn't the best option.",
     "sentiment": "neutral",
     "keywords": [
-      "double cleanse ok"
+      "double cleanse possible"
     ]
   },
   {
     "text": "my soap does foam up; you need to add more water than just damp skin for it to foam though.",
     "sentiment": "neutral",
     "keywords": [
-      "foams up"
+      "foamy issue"
     ]
   },
   {
     "text": "rub it together with water in your hands first; it actually does foam up a bit and work better.",
     "sentiment": "positive",
     "keywords": [
-      "foams up"
+      "foamy issue"
     ]
   },
   {
     "text": "it's water-based.",
     "sentiment": "neutral",
     "keywords": [
-      "water-based"
+      "water-based cleanser",
+      "water-based woes"
     ]
   },
   {
@@ -113,10 +115,7 @@
   {
     "text": "wait, what? i've been using it with water; i've been using it all wrong.",
     "sentiment": "negative",
-    "keywords": [
-      "requires water",
-      "works well with water"
-    ]
+    "keywords": []
   },
   {
     "text": "you have to froth it up in your hands.",
@@ -126,7 +125,9 @@
   {
     "text": "i have the cream to foam, and i love it! to make my cleanser foam, i add water to it.",
     "sentiment": "positive",
-    "keywords": []
+    "keywords": [
+      "foamy issue"
+    ]
   },
   {
     "text": "i've got this; it's perfect.",
@@ -136,12 +137,16 @@
   {
     "text": "i'm curious about the new isdin oil cleanser.",
     "sentiment": "neutral",
-    "keywords": []
+    "keywords": [
+      "mild cleanser appeal"
+    ]
   },
   {
     "text": "you are naturally very pretty.",
     "sentiment": "positive",
-    "keywords": []
+    "keywords": [
+      "natural beauty shines"
+    ]
   },
   {
     "text": "it's now here in the us! yay!",
@@ -152,29 +157,29 @@
     "text": "this product is like a cleansing oil.",
     "sentiment": "positive",
     "keywords": [
-      "double cleanse ok",
-      "good morning cleanser"
+      "mild cleanser appeal"
     ]
   },
   {
     "text": "what?! mine was really quite foamy.",
     "sentiment": "neutral",
     "keywords": [
-      "foams up",
-      "not foamy"
+      "foamy issue"
     ]
   },
   {
     "text": "they perform animal tests.",
     "sentiment": "neutral",
     "keywords": [
-      "animals tested"
+      "animal testing criticism"
     ]
   },
   {
     "text": "i use it with a muslin cloth and find it foams up much less with that.",
     "sentiment": "neutral",
-    "keywords": []
+    "keywords": [
+      "foamy issue"
+    ]
   },
   {
     "text": "that looks like it will take off lash extensions.",
@@ -184,7 +189,9 @@
   {
     "text": "ugh, i have eczema and combination skin; cerave products either dry me out or make me feel sticky. i hate it.",
     "sentiment": "negative",
-    "keywords": []
+    "keywords": [
+      "eczema struggles"
+    ]
   },
   {
     "text": "it is in us that i have it, and you can find it at target, walmart, amazon, etc.",
@@ -199,13 +206,16 @@
   {
     "text": "please fix the amount of micellar water; it has been sold out everywhere.",
     "sentiment": "negative",
-    "keywords": []
+    "keywords": [
+      "micellar water demand"
+    ]
   },
   {
     "text": "we love ceramides, and we must include them in our skin-care routine. we must use skin care that is gentle on our skin.",
     "sentiment": "positive",
     "keywords": [
-      "gentle on skin"
+      "ceramides importance",
+      "skincare routine emphasis"
     ]
   },
   {
@@ -232,16 +242,14 @@
     "text": "you're supposed to rub it between your hands to make it foam up.",
     "sentiment": "neutral",
     "keywords": [
-      "foams up",
-      "not foamy",
-      "requires rubbing"
+      "foamy issue"
     ]
   },
   {
     "text": "i could see this as my morning cleanser; it looks really mild.",
     "sentiment": "positive",
     "keywords": [
-      "good morning cleanser"
+      "mild cleanser appeal"
     ]
   },
   {
@@ -252,7 +260,9 @@
   {
     "text": "wait, america doesn't have cerave.",
     "sentiment": "neutral",
-    "keywords": []
+    "keywords": [
+      "cerave limitations"
+    ]
   },
   {
     "text": "you should try this.",
@@ -262,19 +272,12 @@
   {
     "text": "you need to first take some water on your face and then do the cleanse that i got today.",
     "sentiment": "neutral",
-    "keywords": [
-      "double cleanse ok",
-      "good morning cleanser"
-    ]
+    "keywords": []
   },
   {
     "text": "it foams if you use it on clean skin, meaning that there's no makeup on.",
     "sentiment": "neutral",
-    "keywords": [
-      "good for makeup removal",
-      "not foamy",
-      "not suitable for makeup"
-    ]
+    "keywords": []
   },
   {
     "text": "the cat needs proper skin care for its future.",
@@ -284,21 +287,20 @@
   {
     "text": "cerave is not toxic. why does everyone keep suggesting it? we need to demand better from these companies.",
     "sentiment": "negative",
-    "keywords": []
+    "keywords": [
+      "cerave limitations"
+    ]
   },
   {
     "text": "you're supposed to emulsify it in your hands before applying it to your face.",
     "sentiment": "neutral",
-    "keywords": [
-      "emulsify in hands"
-    ]
+    "keywords": []
   },
   {
     "text": "it foams on me.",
     "sentiment": "negative",
     "keywords": [
-      "foams up",
-      "not foamy"
+      "foamy issue"
     ]
   },
   {
@@ -309,27 +311,28 @@
   {
     "text": "this is a water-based cleanser; the name may be confusing, but it's a water-based cleanser that requires you to use water to create a lather.",
     "sentiment": "neutral",
-    "keywords": []
+    "keywords": [
+      "water-based cleanser"
+    ]
   },
   {
     "text": "wow, you don't even need makeup! it looks like you're wearing it, even when it's all washed off!",
     "sentiment": "positive",
-    "keywords": [
-      "not suitable for makeup"
-    ]
+    "keywords": []
   },
   {
     "text": "your face and hands are supposed to be wet; then, you kind of rub it into your hands, and it gets foamy.",
     "sentiment": "neutral",
     "keywords": [
-      "foams up",
-      "not foamy"
+      "foamy issue"
     ]
   },
   {
     "text": "cerave is not cruelty-free.",
     "sentiment": "negative",
     "keywords": [
+      "cerave limitations",
+      "cruelty concerns",
       "not cruelty-free"
     ]
   },
@@ -337,7 +340,8 @@
     "text": "it's not cruelty-free! oh, did you do the eye test? what about all the animals that were tested instead?!",
     "sentiment": "negative",
     "keywords": [
-      "animals tested",
+      "animal testing criticism",
+      "cruelty concerns",
       "not cruelty-free"
     ]
   },
@@ -350,7 +354,7 @@
     "text": "they test on animals.",
     "sentiment": "negative",
     "keywords": [
-      "animals tested"
+      "animal testing criticism"
     ]
   }
 ]

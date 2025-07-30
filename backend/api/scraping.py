@@ -1,19 +1,57 @@
-import pandas as pd
+import os
+import json
 import re
 import ollama
 import nltk
+import pandas as pd
 from typing import List, Dict
-import os
-import json
 import argostranslate.package
 from langdetect import detect
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from apify_client import ApifyClient
 
 from sentiment_analysis import *
 
 # Load once at the top
 tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
+
+
+def save_to_json(results, output_file):
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+
+def get_actor_input(url):
+     # Prepare the Actor input
+    run_input = {
+        "postURLs": [url],
+        "commentsPerPost": 1000,
+        "maxRepliesPerComment": 0,
+        "resultsPerPage": 1000,
+    }
+    return run_input
+
+def scrape_to_json(url):
+    api_token = os.environ.get("APIFY_API_TOKEN")
+
+    if not api_token:
+        raise EnvironmentError("⚠️ APIFY_API_TOKEN is not set in environment variables.")
+
+    client = ApifyClient(api_token)
+    run_input = get_actor_input(url)
+
+    print("Running the Actor and waiting for it to finish...")
+    run = client.actor("BDec00yAmCm1QbMEI").call(run_input=run_input)
+    print("Actor finished.")
+
+    results = []
+    print("Fetching results...")
+    for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+        results.append(item)
+
+    output_file = "tiktok_apify_comments.json"
+    save_to_json(results, output_file)
+    print(f"Saved {len(results)} items to {output_file}")
 
 def get_comments_data(json_path="tiktok_apify_comments.json"):
     if not os.path.exists(json_path):
@@ -219,6 +257,7 @@ if __name__ == "__main__":
     # # Ensure NLTK resources are downloaded
     nltk.download('punkt')
     nltk.download('averaged_perceptron_tagger')
+    # scrape_to_json(url = "https://www.tiktok.com/@sarahpalmyra/video/7086537682649697578?_r=1&_t=ZT-8yKbPxtxrLi") # uncomment this to add a new url and scrape the comments from that TikTok. 
 
     comments = get_comments_data()
     filter_comments(comments)
