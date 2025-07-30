@@ -8,14 +8,18 @@ import numpy as np
 import ollama
 import json
 from itertools import combinations
+import os
 
 from sentiment_analysis import *
+from db_loader import *
 
 EMBEDDING_MODEL_NAME = 'all-MiniLM-L6-v2'
 SIMILARITY_THRESHOLD = 0.5      # Keywords above this threshold are accepted
 BORDERLINE_THRESHOLD = 0.4      # Keywords in this range go through LLM
 
 def run_llm(prompt, model="llama3"):
+    ollama_host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+    ollama_client = ollama.Client(host=ollama_host)
 
     response = ollama.chat(
         model=model,
@@ -255,4 +259,5 @@ if __name__ == "__main__":
     comments, keywords = extract_keywords_llm()
     run_embedding_pipeline(keywords)
     build_graph()
+    load_graph_data_to_db()
 

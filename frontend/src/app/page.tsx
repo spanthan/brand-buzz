@@ -39,21 +39,6 @@ export default function BrandBuzz() {
     }
   };
 
-  const regenerateKeywords = async () => {
-    try {
-      setLoading(true);
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/regenerate`);
-      const result = await response.json();
-      console.log("Regenerated:", result);
-      // Optionally you could fetchGraphData() again to refresh the graph
-      await fetchGraphData();
-    } catch (error) {
-      console.error("Error regenerating keywords:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
     if (!graphData) return;
 
@@ -200,7 +185,7 @@ export default function BrandBuzz() {
   }, [graphData]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE}/comments`)
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE}/graph`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -234,14 +219,6 @@ export default function BrandBuzz() {
           disabled={loading}
         >
           {loading ? "Generating..." : "Generate Graph"}
-        </button>
-  
-        <button
-          onClick={regenerateKeywords}
-          className="bg-pink-200 text-black px-4 py-2 rounded shadow"
-          disabled={loading}
-        >
-          {loading ? "Regenerating..." : "Regenerate Keywords"}
         </button>
       </div>
   
