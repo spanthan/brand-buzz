@@ -1,1 +1,25 @@
-# write this later
+# Web framework
+fastapi
+
+# CORS support
+python-multipart
+uvicorn
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# NLP and ML
+transformers
+torch
+sentence-transformers
+scikit-learn
+nltk
+langdetect
+
+# Translation
+argostranslate
+
+# Data manipulation
+pandas
+numpy

@@ -29,7 +29,7 @@ export default function BrandBuzz() {
   const fetchGraphData = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:8000/graph");
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/graph`);
       const data = await response.json();
       setGraphData(data);
     } catch (error) {
@@ -42,7 +42,7 @@ export default function BrandBuzz() {
   const regenerateKeywords = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:8000/regenerate");
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/regenerate`);
       const result = await response.json();
       console.log("Regenerated:", result);
       // Optionally you could fetchGraphData() again to refresh the graph
@@ -200,7 +200,7 @@ export default function BrandBuzz() {
   }, [graphData]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/comments")
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE}/comments`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {

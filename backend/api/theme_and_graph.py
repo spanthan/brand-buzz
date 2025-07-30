@@ -9,6 +9,8 @@ import ollama
 import json
 from itertools import combinations
 
+from sentiment_analysis import *
+
 EMBEDDING_MODEL_NAME = 'all-MiniLM-L6-v2'
 SIMILARITY_THRESHOLD = 0.5      # Keywords above this threshold are accepted
 BORDERLINE_THRESHOLD = 0.4      # Keywords in this range go through LLM

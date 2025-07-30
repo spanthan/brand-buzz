@@ -13,24 +13,12 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import numpy as np
 
+from sentiment_analysis import *
+
 # Load once at the top
 tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 
-def fix_grammar(comment):
-    prompt = f'fix the grammar, punctuation, and spelling in this sentence. Only give me back the corrected sentence, no justification or notes: {comment}'
-    response = ollama.chat(
-                model="llama3",
-                messages=[{"role": "user", "content": prompt}]
-            )
-    output = response["message"]["content"].strip()
-    if "\n" in output:
-        fixed_text = output.split("\n")[-1].strip()
-    else:
-        fixed_text = output
-    fixed_text = fixed_text.strip('“”‘’"\'')
-    print(fixed_text)
-    return fixed_text
 def get_comments_data(json_path="tiktok_apify_comments.json"):
     if not os.path.exists(json_path):
         raise FileNotFoundError(f"JSON file not found: {json_path}")
@@ -56,6 +44,21 @@ def get_comments_data(json_path="tiktok_apify_comments.json"):
 
     return comments
 
+def fix_grammar(comment):
+    prompt = f'fix the grammar, punctuation, and spelling in this sentence. Only give me back the corrected sentence, no justification or notes: {comment}'
+    response = ollama.chat(
+                model="llama3",
+                messages=[{"role": "user", "content": prompt}]
+            )
+    output = response["message"]["content"].strip()
+    if "\n" in output:
+        fixed_text = output.split("\n")[-1].strip()
+    else:
+        fixed_text = output
+    fixed_text = fixed_text.strip('“”‘’"\'')
+    print(fixed_text)
+    return fixed_text
+
 # === Helper: Check if comment is only a mention ===
 def is_only_mention(text: str) -> bool:
     """Check if the entire comment is just mentions and whitespace."""
@@ -66,7 +69,6 @@ def is_only_mention(text: str) -> bool:
 
 def strip_mentions(text: str) -> str:
     """Remove all @mentions from the text, only if there's more than just mentions."""
-    # If it's only mentions, return an empty string (we'll remove it)
     
     return re.sub(r"@\S+", "", text).strip()
 
@@ -100,69 +102,6 @@ def is_question(text: str) -> bool:
         pass
 
     return False
-
-# === Helper: Use LLM to classify comment relevance ===
-def classify_comments_with_ollama(comments: List[str]) -> List[str]:
-    BATCH_SIZE = 10
-    model = "llama3"
-    relevance_labels = []
-
-    for i in range(0, len(comments), BATCH_SIZE):
-        batch = comments[i:i + BATCH_SIZE]
-        numbered = "\n".join(f"{j+1}. {c}" for j, c in enumerate(batch))
-        prompt = (
-            "You are analyzing social media comments about a skincare product.\n"
-            "Label each comment as one of the following:\n"
-            "- relevant → useful information about the product, ingredients, usage, experience\n"
-            "- irrelevant → off-topic questions or creator-focused (e.g., nail polish, store, name, unrelated requests)\n\n"
-            "Here are the comments:\n" + numbered + "\n\nRespond in this format:\n1. relevant\n2. irrelevant\n..."
-        )
-
-        try:
-            response = ollama.chat(
-                model=model,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            output = response["message"]["content"].strip().splitlines()
-            labels = []
-
-            for line in output:
-                if "." in line:
-                    _, label = line.split(".", 1)
-                    labels.append(label.strip().lower())
-            # fallback
-            while len(labels) < len(batch):
-                labels.append("unknown")
-            relevance_labels.extend(labels[:len(batch)])
-
-        except Exception as e:
-            print("LLM error:", e)
-            relevance_labels.extend(["unknown"] * len(batch))
-
-        time.sleep(1)
-
-    return relevance_labels
-
-
-def get_sentiment_label(text):
-    # Tokenize input
-    inputs = tokenizer(text, return_tensors="pt", truncation=True)
-    with torch.no_grad():
-        logits = model(**inputs).logits
-    scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
-    labels = ["negative", "neutral", "positive"]
-    return labels[np.argmax(scores)]
-
-# def get_sentiment_label(text):
-#     inputs = tokenizer(text, return_tensors="pt", truncation=True)
-#     with torch.no_grad():
-#         logits = model(**inputs).logits
-#     scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
-
-#     # Convert 3-class (neg, neutral, pos) to 2-class
-#     neg_score = scores[0]
-#     pos_score = scores[2]
-#     return "positive" if pos_score >= neg_score else "negative"
 
 # === MAIN FUNCTION ===
 def filter_comments(all_comments: List[Dict]) -> pd.DataFrame:
@@ -207,13 +146,12 @@ def filter_comments(all_comments: List[Dict]) -> pd.DataFrame:
     # print(f"Removed irrelevant via LLM: {len(irrelevant_comments)}")
 
     
-
     # print(f"Translating Comments")
     # df["translated_text"] = df["text"].apply(translate_comment)
 
     # df.to_csv("translated_comments.csv", index=False)
 
-    df["sentiment"] = df["text"].apply(get_sentiment_label)
+    df["sentiment"] = df["text"].apply(get_sentiment)
 
     # === Optionally save removed comments for inspection ===
     mention_only_comments.to_csv("filtered_mentions.csv", index=False)
