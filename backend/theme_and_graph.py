@@ -48,8 +48,11 @@ def extract_keywords_llm():
     print("📥 Loading final_comments.csv")
 
     df = pd.read_csv("final_comments.csv")
-    comments = df["text"].dropna().astype(str).tolist()
-
+    comments = (
+        df.dropna(subset=["text", "sentiment"])
+        .apply(lambda row: f"{row['text']} [{row['sentiment']}]", axis=1)
+        .tolist()
+    )
     print(f"✅ Loaded {len(comments)} comments")
 
     print("🔍 Extracting keywords with LLM...")
@@ -110,15 +113,20 @@ def run_embedding_pipeline(keywords):
     print("🔍 Running embedding similarity...")
     result_df = embed_and_match(df_comments, keywords, threshold=0.5)
 
-    print("💾 Saving results to comment_keyword_map.csv and comment_keyword_map.json...")
-
-    # Save all columns to CSV
-    # result_df.to_csv("comment_keyword_map.csv", index=False)
+    print("💾 Saving results to comment_keyword_map.json...")
 
     # Save to JSON with desired format
     json_records = result_df[["text", "sentiment", "keywords"]].to_dict(orient="records")
+    lowercased_records = [
+    {
+        "text": record["text"].lower(),
+        "sentiment": record["sentiment"].lower(),
+        "keywords": [kw.lower() for kw in record["keywords"]]
+    }
+    for record in json_records
+]
     with open("comment_keyword_map.json", "w", encoding="utf-8") as f:
-        json.dump(json_records, f, indent=2, ensure_ascii=False)
+        json.dump(lowercased_records, f, indent=2, ensure_ascii=False)
 
     print("✅ Done.")
 

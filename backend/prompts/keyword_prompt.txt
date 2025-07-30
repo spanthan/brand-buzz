@@ -12,9 +12,13 @@ You may lightly paraphrase (e.g., normalize different phrasings), but do not com
 
 Each theme must be 4 words or fewer.
 
-Only include the most relevant, recurring, or strongly expressed themes across the group of comments.
+Only include the most relevant, recurring, or strongly expressed themes across the group of comments. 
 
-Ensure the final list does not contain duplicate or semantically redundant phrases.
+Ensure the final list does not contain duplicate or semantically redundant phrases. 
+
+Make sure you take into consideration the sentiment of the comment when you come up with the phrases. 
+
+The input will be given to you as: "comment [sentiment] list"
 
 Format your output as a comma-separated list of quoted phrases:
 "theme 1", "theme 2", "theme 3", ...

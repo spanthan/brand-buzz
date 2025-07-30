@@ -1,24 +1,29 @@
 {
   "nodes": [
     {
-      "keyword": "cerave isn't cruelty-free",
-      "weight": 5,
-      "sentiment": "negative"
-    },
-    {
-      "keyword": "good morning cleanser",
-      "weight": 5,
+      "keyword": "i'm delighted",
+      "weight": 1,
       "sentiment": "positive"
     },
     {
-      "keyword": "makes me itchy",
-      "weight": 1,
+      "keyword": "cerave not cruelty-free",
+      "weight": 5,
       "sentiment": "negative"
     },
     {
-      "keyword": "not suitable for oily skin",
-      "weight": 2,
+      "keyword": "toxic and not cruelty-free",
+      "weight": 3,
       "sentiment": "negative"
+    },
+    {
+      "keyword": "water-based cleanser",
+      "weight": 4,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "good for oily skin",
+      "weight": 2,
+      "sentiment": "positive"
     },
     {
       "keyword": "not designed for makeup removal",
@@ -26,24 +31,19 @@
       "sentiment": "positive"
     },
     {
-      "keyword": "washes off makeup",
-      "weight": 3,
-      "sentiment": "positive"
+      "keyword": "prefer this over foaming cleaner",
+      "weight": 6,
+      "sentiment": "neutral"
     },
     {
-      "keyword": "preferred over foaming cleaner",
+      "keyword": "foams up nicely",
+      "weight": 10,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "needs more foam",
       "weight": 8,
-      "sentiment": "positive"
-    },
-    {
-      "keyword": "foams with water",
-      "weight": 9,
-      "sentiment": "negative"
-    },
-    {
-      "keyword": "it's water-based",
-      "weight": 2,
-      "sentiment": "positive"
+      "sentiment": "neutral"
     },
     {
       "keyword": "available in australia",
@@ -51,230 +51,265 @@
       "sentiment": "positive"
     },
     {
-      "keyword": "needs wet skin",
+      "keyword": "use with water",
       "weight": 1,
       "sentiment": "negative"
     },
     {
-      "keyword": "supports animal testing",
-      "weight": 4,
-      "sentiment": "negative"
+      "keyword": "gentle on skin",
+      "weight": 1,
+      "sentiment": "positive"
     },
     {
-      "keyword": "requires emulsification",
+      "keyword": "love ceramides",
       "weight": 1,
-      "sentiment": "negative"
+      "sentiment": "positive"
+    },
+    {
+      "keyword": "rub between hands",
+      "weight": 1,
+      "sentiment": "neutral"
     }
   ],
   "links": [
     {
-      "source": "makes me itchy",
-      "target": "not suitable for oily skin",
-      "value": 1
-    },
-    {
-      "source": "not designed for makeup removal",
-      "target": "washes off makeup",
+      "source": "cerave not cruelty-free",
+      "target": "toxic and not cruelty-free",
       "value": 3
     },
     {
-      "source": "foams with water",
-      "target": "preferred over foaming cleaner",
-      "value": 7
+      "source": "foams up nicely",
+      "target": "needs more foam",
+      "value": 8
     },
     {
-      "source": "foams with water",
-      "target": "needs wet skin",
+      "source": "foams up nicely",
+      "target": "prefer this over foaming cleaner",
+      "value": 4
+    },
+    {
+      "source": "needs more foam",
+      "target": "prefer this over foaming cleaner",
+      "value": 4
+    },
+    {
+      "source": "gentle on skin",
+      "target": "love ceramides",
       "value": 1
     },
     {
-      "source": "foams with water",
-      "target": "not designed for makeup removal",
+      "source": "foams up nicely",
+      "target": "rub between hands",
       "value": 1
     },
     {
-      "source": "foams with water",
-      "target": "washes off makeup",
+      "source": "needs more foam",
+      "target": "rub between hands",
       "value": 1
     },
     {
       "source": "not designed for makeup removal",
-      "target": "preferred over foaming cleaner",
+      "target": "prefer this over foaming cleaner",
       "value": 1
     },
     {
-      "source": "preferred over foaming cleaner",
-      "target": "washes off makeup",
-      "value": 1
-    },
-    {
-      "source": "foams with water",
-      "target": "it's water-based",
-      "value": 1
-    },
-    {
-      "source": "it's water-based",
-      "target": "preferred over foaming cleaner",
-      "value": 1
-    },
-    {
-      "source": "cerave isn't cruelty-free",
-      "target": "supports animal testing",
-      "value": 1
-    },
-    {
-      "source": "cerave isn't cruelty-free",
-      "target": "not suitable for oily skin",
+      "source": "i'm delighted",
+      "target": "foams up nicely",
       "value": 0.5
     },
     {
-      "source": "cerave isn't cruelty-free",
-      "target": "it's water-based",
+      "source": "i'm delighted",
+      "target": "needs more foam",
       "value": 0.5
     },
     {
-      "source": "cerave isn't cruelty-free",
-      "target": "not designed for makeup removal",
+      "source": "i'm delighted",
+      "target": "love ceramides",
       "value": 0.5
     },
     {
-      "source": "good morning cleanser",
-      "target": "washes off makeup",
-      "value": 0.5
-    },
-    {
-      "source": "good morning cleanser",
-      "target": "preferred over foaming cleaner",
-      "value": 0.5
-    },
-    {
-      "source": "good morning cleanser",
-      "target": "needs wet skin",
-      "value": 0.5
-    },
-    {
-      "source": "good morning cleanser",
-      "target": "makes me itchy",
-      "value": 0.5
-    },
-    {
-      "source": "makes me itchy",
-      "target": "needs wet skin",
-      "value": 0.5
-    },
-    {
-      "source": "makes me itchy",
-      "target": "good morning cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "makes me itchy",
-      "target": "it's water-based",
-      "value": 0.5
-    },
-    {
-      "source": "not suitable for oily skin",
-      "target": "needs wet skin",
-      "value": 0.5
-    },
-    {
-      "source": "not suitable for oily skin",
-      "target": "not designed for makeup removal",
-      "value": 0.5
-    },
-    {
-      "source": "not suitable for oily skin",
-      "target": "requires emulsification",
-      "value": 0.5
-    },
-    {
-      "source": "not designed for makeup removal",
-      "target": "not suitable for oily skin",
-      "value": 0.5
-    },
-    {
-      "source": "washes off makeup",
-      "target": "good morning cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "it's water-based",
-      "target": "needs wet skin",
-      "value": 0.5
-    },
-    {
-      "source": "it's water-based",
-      "target": "makes me itchy",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "needs wet skin",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "it's water-based",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "cerave isn't cruelty-free",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "supports animal testing",
-      "value": 0.5
-    },
-    {
-      "source": "needs wet skin",
-      "target": "not suitable for oily skin",
-      "value": 0.5
-    },
-    {
-      "source": "needs wet skin",
-      "target": "makes me itchy",
-      "value": 0.5
-    },
-    {
-      "source": "needs wet skin",
-      "target": "washes off makeup",
-      "value": 0.5
-    },
-    {
-      "source": "supports animal testing",
-      "target": "it's water-based",
-      "value": 0.5
-    },
-    {
-      "source": "supports animal testing",
+      "source": "i'm delighted",
       "target": "available in australia",
       "value": 0.5
     },
     {
-      "source": "supports animal testing",
-      "target": "needs wet skin",
+      "source": "cerave not cruelty-free",
+      "target": "love ceramides",
       "value": 0.5
     },
     {
-      "source": "requires emulsification",
-      "target": "not suitable for oily skin",
+      "source": "cerave not cruelty-free",
+      "target": "gentle on skin",
       "value": 0.5
     },
     {
-      "source": "requires emulsification",
-      "target": "needs wet skin",
-      "value": 0.5
-    },
-    {
-      "source": "requires emulsification",
+      "source": "cerave not cruelty-free",
       "target": "not designed for makeup removal",
       "value": 0.5
     },
     {
-      "source": "requires emulsification",
-      "target": "makes me itchy",
+      "source": "toxic and not cruelty-free",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "toxic and not cruelty-free",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "toxic and not cruelty-free",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "use with water",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "prefer this over foaming cleaner",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "good for oily skin",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "good for oily skin",
+      "target": "not designed for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "good for oily skin",
+      "target": "foams up nicely",
+      "value": 0.5
+    },
+    {
+      "source": "good for oily skin",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "not designed for makeup removal",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "not designed for makeup removal",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "not designed for makeup removal",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "prefer this over foaming cleaner",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "foams up nicely",
+      "target": "i'm delighted",
+      "value": 0.5
+    },
+    {
+      "source": "needs more foam",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia",
+      "target": "cerave not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia",
+      "target": "toxic and not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "available in australia",
+      "target": "i'm delighted",
+      "value": 0.5
+    },
+    {
+      "source": "use with water",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "use with water",
+      "target": "prefer this over foaming cleaner",
+      "value": 0.5
+    },
+    {
+      "source": "use with water",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "use with water",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "gentle on skin",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "gentle on skin",
+      "target": "rub between hands",
+      "value": 0.5
+    },
+    {
+      "source": "gentle on skin",
+      "target": "toxic and not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "love ceramides",
+      "target": "cerave not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "love ceramides",
+      "target": "toxic and not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "love ceramides",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "rub between hands",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "rub between hands",
+      "target": "good for oily skin",
       "value": 0.5
     }
   ]

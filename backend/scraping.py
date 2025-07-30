@@ -144,25 +144,25 @@ def classify_comments_with_ollama(comments: List[str]) -> List[str]:
     return relevance_labels
 
 
-# def get_sentiment_label(text):
-#     # Tokenize input
-#     inputs = tokenizer(text, return_tensors="pt", truncation=True)
-#     with torch.no_grad():
-#         logits = model(**inputs).logits
-#     scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
-#     labels = ["negative", "neutral", "positive"]
-#     return labels[np.argmax(scores)]
-
 def get_sentiment_label(text):
+    # Tokenize input
     inputs = tokenizer(text, return_tensors="pt", truncation=True)
     with torch.no_grad():
         logits = model(**inputs).logits
     scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
+    labels = ["negative", "neutral", "positive"]
+    return labels[np.argmax(scores)]
 
-    # Convert 3-class (neg, neutral, pos) to 2-class
-    neg_score = scores[0]
-    pos_score = scores[2]
-    return "positive" if pos_score >= neg_score else "negative"
+# def get_sentiment_label(text):
+#     inputs = tokenizer(text, return_tensors="pt", truncation=True)
+#     with torch.no_grad():
+#         logits = model(**inputs).logits
+#     scores = torch.nn.functional.softmax(logits, dim=1).squeeze().numpy()
+
+#     # Convert 3-class (neg, neutral, pos) to 2-class
+#     neg_score = scores[0]
+#     pos_score = scores[2]
+#     return "positive" if pos_score >= neg_score else "negative"
 
 # === MAIN FUNCTION ===
 def filter_comments(all_comments: List[Dict]) -> pd.DataFrame:
