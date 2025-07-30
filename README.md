@@ -132,7 +132,7 @@ suade-take-home/
 ### Comment Analysis
 - **Keyword Filtering**: View comments by selected keywords
 - **Sentiment Breakdown**: Positive, neutral, negative classifications
-- **Real-time Updates**: Dynamic comment loading
+- **Real-time Updates**: Dynamic comment loading (future feature)
 
 ### Data Management
 - **Keyword Regeneration**: AI-powered theme extraction
@@ -162,25 +162,6 @@ suade-take-home/
 - Deploy Python app with PostgreSQL
 - Set environment variables for database
 - Install Ollama dependencies
-
-## 📈 Performance
-
-- **Processing**: ~2,276 comments in ~5 minutes
-- **Graph Generation**: Real-time with D3.js
-- **API Response**: <100ms for graph data
-- **Memory Usage**: ~2GB for full pipeline
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test locally
-5. Submit a pull request
-
-## 📝 License
-
-This project is part of the Suade take-home assignment.
 
 ---
 
