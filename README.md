@@ -1,4 +1,4 @@
-# Suade Take-Home: TikTok Comment Analysis & Visualization
+# Brand Buzz: TikTok Comment Analysis & Visualization
 
 A full-stack application that analyzes TikTok comments about CeraVe products, extracts themes and keywords using AI/ML, and visualizes the results in an interactive network graph.
 
@@ -35,65 +35,12 @@ This project demonstrates a complete data science pipeline from raw social media
 - PostgreSQL
 - Ollama (for LLM inference)
 
-### Backend Setup
-
-1. **Install Python dependencies**:
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   ```
-
-2. **Set up PostgreSQL database**:
-   ```bash
-   # Create database
-   createdb suade_db
-   
-   # Update connection string in api.py if needed
-   DATABASE_URL = "postgresql://username:password@localhost:5432/suade_db"
-   ```
-
-3. **Install and start Ollama**:
-   ```bash
-   # Install Ollama (https://ollama.ai/)
-   # Pull Llama3 model
-   ollama pull llama3
-   ```
-
-4. **Start the backend server**:
-   ```bash
-   cd backend
-   uvicorn api:app --reload --port 8000
-   ```
-
-### Frontend Setup
-
-1. **Install Node.js dependencies**:
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-2. **Set environment variables**:
-   ```bash
-   # Create .env.local in frontend directory
-   NEXT_PUBLIC_API_BASE=http://localhost:8000
-   ```
-
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**:
-   ```
-   http://localhost:3000
-   ```
-
 ## 📊 Data Pipeline
 
 ### 1. Data Ingestion
 - Raw TikTok comments from `tiktok_apify_comments.json`
-- 2,276 comments about CeraVe products
+- There is code to scrape from TikTok using apify, but this only ran once to avoid getting charged too many times by Apify
+- In theory, to run this on another TikTok url, you would need to run the apify code with that url. 
 
 ### 2. Preprocessing (`scraping.py`)
 - Filters out mentions, questions, non-English content
@@ -115,7 +62,7 @@ This project demonstrates a complete data science pipeline from raw social media
 
 ## 🔄 Updating the Graph (Local Only)
 
-**Note**: The deployed version uses static data. To update the graph with new analysis, you must run the backend locally.
+**Note**: The deployed version uses static data from a Postgres Database. To update the graph with new analysis, you must run the backend locally.
 
 ### Option 1: Regenerate Keywords via UI
 1. Start the backend locally: `uvicorn api:app --reload --port 8000`
@@ -185,7 +132,7 @@ suade-take-home/
 ### Comment Analysis
 - **Keyword Filtering**: View comments by selected keywords
 - **Sentiment Breakdown**: Positive, neutral, negative classifications
-- **Real-time Updates**: Dynamic comment loading
+- **Real-time Updates**: Dynamic comment loading (future feature)
 
 ### Data Management
 - **Keyword Regeneration**: AI-powered theme extraction
@@ -206,34 +153,15 @@ suade-take-home/
 
 ## 🚀 Deployment
 
-### Frontend (Vercel/Netlify)
+### Frontend (Vercel)
 - Build: `npm run build`
 - Deploy static files
 - Set `NEXT_PUBLIC_API_BASE` to your backend URL
 
-### Backend (Railway/Render)
+### Backend (Render)
 - Deploy Python app with PostgreSQL
 - Set environment variables for database
 - Install Ollama dependencies
-
-## 📈 Performance
-
-- **Processing**: ~2,276 comments in ~5 minutes
-- **Graph Generation**: Real-time with D3.js
-- **API Response**: <100ms for graph data
-- **Memory Usage**: ~2GB for full pipeline
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test locally
-5. Submit a pull request
-
-## 📝 License
-
-This project is part of the Suade take-home assignment.
 
 ---
 
