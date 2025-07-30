@@ -1,17 +1,22 @@
 {
   "nodes": [
     {
-      "keyword": "i'm delighted",
+      "keyword": "great review",
       "weight": 1,
       "sentiment": "positive"
     },
     {
-      "keyword": "cerave not cruelty-free",
-      "weight": 5,
+      "keyword": "cerave issues",
+      "weight": 4,
       "sentiment": "negative"
     },
     {
-      "keyword": "toxic and not cruelty-free",
+      "keyword": "cruelty concerns",
+      "weight": 3,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "not cruelty-free",
       "weight": 3,
       "sentiment": "negative"
     },
@@ -21,165 +26,190 @@
       "sentiment": "neutral"
     },
     {
+      "keyword": "mild morning cleanser",
+      "weight": 5,
+      "sentiment": "neutral"
+    },
+    {
       "keyword": "good for oily skin",
       "weight": 2,
       "sentiment": "positive"
     },
     {
-      "keyword": "not designed for makeup removal",
-      "weight": 4,
+      "keyword": "balms work better",
+      "weight": 1,
       "sentiment": "positive"
     },
     {
-      "keyword": "prefer this over foaming cleaner",
-      "weight": 6,
+      "keyword": "not foamy enough",
+      "weight": 7,
       "sentiment": "neutral"
     },
     {
-      "keyword": "foams up nicely",
-      "weight": 10,
-      "sentiment": "neutral"
-    },
-    {
-      "keyword": "needs more foam",
+      "keyword": "foams with water",
       "weight": 8,
       "sentiment": "neutral"
     },
     {
-      "keyword": "available in australia",
-      "weight": 2,
+      "keyword": "foams up",
+      "weight": 7,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "us availability",
+      "weight": 1,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "requires water",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "animal testing",
+      "weight": 3,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "eczema struggles",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "amazon has it",
+      "weight": 1,
       "sentiment": "positive"
     },
     {
-      "keyword": "use with water",
+      "keyword": "target sells it",
       "weight": 1,
-      "sentiment": "negative"
+      "sentiment": "positive"
     },
     {
       "keyword": "gentle on skin",
       "weight": 1,
       "sentiment": "positive"
-    },
-    {
-      "keyword": "love ceramides",
-      "weight": 1,
-      "sentiment": "positive"
-    },
-    {
-      "keyword": "rub between hands",
-      "weight": 1,
-      "sentiment": "neutral"
     }
   ],
   "links": [
     {
-      "source": "cerave not cruelty-free",
-      "target": "toxic and not cruelty-free",
+      "source": "cerave issues",
+      "target": "cruelty concerns",
+      "value": 2
+    },
+    {
+      "source": "cerave issues",
+      "target": "not cruelty-free",
+      "value": 2
+    },
+    {
+      "source": "cruelty concerns",
+      "target": "not cruelty-free",
       "value": 3
     },
     {
-      "source": "foams up nicely",
-      "target": "needs more foam",
-      "value": 8
-    },
-    {
-      "source": "foams up nicely",
-      "target": "prefer this over foaming cleaner",
-      "value": 4
-    },
-    {
-      "source": "needs more foam",
-      "target": "prefer this over foaming cleaner",
-      "value": 4
-    },
-    {
-      "source": "gentle on skin",
-      "target": "love ceramides",
-      "value": 1
-    },
-    {
-      "source": "foams up nicely",
-      "target": "rub between hands",
-      "value": 1
-    },
-    {
-      "source": "needs more foam",
-      "target": "rub between hands",
-      "value": 1
-    },
-    {
-      "source": "not designed for makeup removal",
-      "target": "prefer this over foaming cleaner",
-      "value": 1
-    },
-    {
-      "source": "i'm delighted",
-      "target": "foams up nicely",
-      "value": 0.5
-    },
-    {
-      "source": "i'm delighted",
-      "target": "needs more foam",
-      "value": 0.5
-    },
-    {
-      "source": "i'm delighted",
-      "target": "love ceramides",
-      "value": 0.5
-    },
-    {
-      "source": "i'm delighted",
-      "target": "available in australia",
-      "value": 0.5
-    },
-    {
-      "source": "cerave not cruelty-free",
-      "target": "love ceramides",
-      "value": 0.5
-    },
-    {
-      "source": "cerave not cruelty-free",
-      "target": "gentle on skin",
-      "value": 0.5
-    },
-    {
-      "source": "cerave not cruelty-free",
-      "target": "not designed for makeup removal",
-      "value": 0.5
-    },
-    {
-      "source": "toxic and not cruelty-free",
-      "target": "gentle on skin",
-      "value": 0.5
-    },
-    {
-      "source": "toxic and not cruelty-free",
+      "source": "mild morning cleanser",
       "target": "water-based cleanser",
+      "value": 2
+    },
+    {
+      "source": "foams up",
+      "target": "foams with water",
+      "value": 6
+    },
+    {
+      "source": "foams up",
+      "target": "not foamy enough",
+      "value": 5
+    },
+    {
+      "source": "foams with water",
+      "target": "not foamy enough",
+      "value": 5
+    },
+    {
+      "source": "good for oily skin",
+      "target": "mild morning cleanser",
+      "value": 1
+    },
+    {
+      "source": "amazon has it",
+      "target": "target sells it",
+      "value": 1
+    },
+    {
+      "source": "animal testing",
+      "target": "cruelty concerns",
+      "value": 1
+    },
+    {
+      "source": "animal testing",
+      "target": "not cruelty-free",
+      "value": 1
+    },
+    {
+      "source": "great review",
+      "target": "foams up",
       "value": 0.5
     },
     {
-      "source": "toxic and not cruelty-free",
-      "target": "not designed for makeup removal",
+      "source": "great review",
+      "target": "amazon has it",
       "value": 0.5
     },
     {
-      "source": "water-based cleanser",
-      "target": "use with water",
+      "source": "great review",
+      "target": "target sells it",
       "value": 0.5
     },
     {
-      "source": "water-based cleanser",
-      "target": "prefer this over foaming cleaner",
-      "value": 0.5
-    },
-    {
-      "source": "water-based cleanser",
-      "target": "not designed for makeup removal",
-      "value": 0.5
-    },
-    {
-      "source": "water-based cleanser",
+      "source": "great review",
       "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "cerave issues",
+      "target": "eczema struggles",
+      "value": 0.5
+    },
+    {
+      "source": "cerave issues",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "cruelty concerns",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "not cruelty-free",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "requires water",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "foams with water",
+      "value": 0.5
+    },
+    {
+      "source": "water-based cleanser",
+      "target": "balms work better",
+      "value": 0.5
+    },
+    {
+      "source": "mild morning cleanser",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "mild morning cleanser",
+      "target": "balms work better",
       "value": 0.5
     },
     {
@@ -189,87 +219,162 @@
     },
     {
       "source": "good for oily skin",
-      "target": "not designed for makeup removal",
+      "target": "eczema struggles",
       "value": 0.5
     },
     {
       "source": "good for oily skin",
-      "target": "foams up nicely",
+      "target": "not foamy enough",
       "value": 0.5
     },
     {
-      "source": "good for oily skin",
+      "source": "balms work better",
+      "target": "mild morning cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "balms work better",
       "target": "water-based cleanser",
       "value": 0.5
     },
     {
-      "source": "not designed for makeup removal",
-      "target": "water-based cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "not designed for makeup removal",
+      "source": "balms work better",
       "target": "good for oily skin",
       "value": 0.5
     },
     {
-      "source": "not designed for makeup removal",
+      "source": "balms work better",
+      "target": "eczema struggles",
+      "value": 0.5
+    },
+    {
+      "source": "not foamy enough",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "not foamy enough",
+      "target": "requires water",
+      "value": 0.5
+    },
+    {
+      "source": "foams with water",
+      "target": "requires water",
+      "value": 0.5
+    },
+    {
+      "source": "foams with water",
+      "target": "water-based cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "foams up",
+      "target": "good for oily skin",
+      "value": 0.5
+    },
+    {
+      "source": "foams up",
       "target": "gentle on skin",
       "value": 0.5
     },
     {
-      "source": "prefer this over foaming cleaner",
+      "source": "us availability",
+      "target": "amazon has it",
+      "value": 0.5
+    },
+    {
+      "source": "us availability",
+      "target": "target sells it",
+      "value": 0.5
+    },
+    {
+      "source": "us availability",
+      "target": "great review",
+      "value": 0.5
+    },
+    {
+      "source": "us availability",
+      "target": "cerave issues",
+      "value": 0.5
+    },
+    {
+      "source": "requires water",
+      "target": "foams with water",
+      "value": 0.5
+    },
+    {
+      "source": "requires water",
       "target": "water-based cleanser",
       "value": 0.5
     },
     {
-      "source": "foams up nicely",
-      "target": "i'm delighted",
+      "source": "requires water",
+      "target": "not foamy enough",
       "value": 0.5
     },
     {
-      "source": "needs more foam",
+      "source": "requires water",
+      "target": "mild morning cleanser",
+      "value": 0.5
+    },
+    {
+      "source": "animal testing",
+      "target": "requires water",
+      "value": 0.5
+    },
+    {
+      "source": "animal testing",
+      "target": "target sells it",
+      "value": 0.5
+    },
+    {
+      "source": "eczema struggles",
       "target": "good for oily skin",
       "value": 0.5
     },
     {
-      "source": "available in australia",
-      "target": "cerave not cruelty-free",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "toxic and not cruelty-free",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "good for oily skin",
-      "value": 0.5
-    },
-    {
-      "source": "available in australia",
-      "target": "i'm delighted",
-      "value": 0.5
-    },
-    {
-      "source": "use with water",
-      "target": "water-based cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "use with water",
-      "target": "prefer this over foaming cleaner",
-      "value": 0.5
-    },
-    {
-      "source": "use with water",
+      "source": "eczema struggles",
       "target": "gentle on skin",
       "value": 0.5
     },
     {
-      "source": "use with water",
-      "target": "good for oily skin",
+      "source": "eczema struggles",
+      "target": "balms work better",
+      "value": 0.5
+    },
+    {
+      "source": "eczema struggles",
+      "target": "cerave issues",
+      "value": 0.5
+    },
+    {
+      "source": "amazon has it",
+      "target": "us availability",
+      "value": 0.5
+    },
+    {
+      "source": "amazon has it",
+      "target": "great review",
+      "value": 0.5
+    },
+    {
+      "source": "amazon has it",
+      "target": "not cruelty-free",
+      "value": 0.5
+    },
+    {
+      "source": "target sells it",
+      "target": "us availability",
+      "value": 0.5
+    },
+    {
+      "source": "target sells it",
+      "target": "great review",
+      "value": 0.5
+    },
+    {
+      "source": "target sells it",
+      "target": "animal testing",
       "value": 0.5
     },
     {
@@ -279,37 +384,17 @@
     },
     {
       "source": "gentle on skin",
-      "target": "rub between hands",
+      "target": "mild morning cleanser",
       "value": 0.5
     },
     {
       "source": "gentle on skin",
-      "target": "toxic and not cruelty-free",
+      "target": "not cruelty-free",
       "value": 0.5
     },
     {
-      "source": "love ceramides",
-      "target": "cerave not cruelty-free",
-      "value": 0.5
-    },
-    {
-      "source": "love ceramides",
-      "target": "toxic and not cruelty-free",
-      "value": 0.5
-    },
-    {
-      "source": "love ceramides",
-      "target": "good for oily skin",
-      "value": 0.5
-    },
-    {
-      "source": "rub between hands",
-      "target": "gentle on skin",
-      "value": 0.5
-    },
-    {
-      "source": "rub between hands",
-      "target": "good for oily skin",
+      "source": "gentle on skin",
+      "target": "cruelty concerns",
       "value": 0.5
     }
   ]

@@ -8,7 +8,6 @@ import numpy as np
 import ollama
 import json
 from itertools import combinations
-import os
 
 from sentiment_analysis import *
 from db_loader import *
@@ -18,8 +17,6 @@ SIMILARITY_THRESHOLD = 0.5      # Keywords above this threshold are accepted
 BORDERLINE_THRESHOLD = 0.4      # Keywords in this range go through LLM
 
 def run_llm(prompt, model="llama3"):
-    ollama_host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-    ollama_client = ollama.Client(host=ollama_host)
 
     response = ollama.chat(
         model=model,
@@ -50,6 +47,16 @@ def deduplicate_phrases(phrases, threshold=0.85):
         keep.append(phrase)
     return keep
 
+def extract_keywords_llm_helper(comments):
+    print("🔍 Extracting keywords with LLM...")
+    with open(f"prompts/keyword_prompt.txt", "r", encoding="utf-8") as file:
+        template = file.read()
+
+    prompt = template.format(comment_list=comments, length=20)
+    response = run_llm(prompt)
+    keywords = re.findall(r'"(.*?)"', response)
+    return keywords
+
 def extract_keywords_llm():
     print("📥 Loading final_comments.csv")
 
@@ -61,13 +68,10 @@ def extract_keywords_llm():
     )
     print(f"✅ Loaded {len(comments)} comments")
 
-    print("🔍 Extracting keywords with LLM...")
-    with open(f"../prompts/keyword_prompt.txt", "r", encoding="utf-8") as file:
-        template = file.read()
+    keywords = extract_keywords_llm_helper(comments)
 
-    prompt = template.format(comment_list=comments, length=15)
-    response = run_llm(prompt)
-    keywords = re.findall(r'"(.*?)"', response)
+    while len(keywords) < 15:
+        keywords = extract_keywords_llm_helper(comments)
 
     print("🧹 Deduplicating semantically similar phrases...")
     deduped_keywords = deduplicate_phrases(keywords)
@@ -131,7 +135,7 @@ def run_embedding_pipeline(keywords):
     }
     for record in json_records
 ]
-    with open("../comment_keyword_map.json", "w", encoding="utf-8") as f:
+    with open("comment_keyword_map.json", "w", encoding="utf-8") as f:
         json.dump(lowercased_records, f, indent=2, ensure_ascii=False)
 
     print("✅ Done.")
@@ -242,13 +246,13 @@ def add_llm_links(graph, min_links=4, top_k=10):
     graph['links'].extend(new_links)
     return graph
 
-def save_graph_to_json(graph, path = "../theme_graph.json"):
+def save_graph_to_json(graph, path = "theme_graph.json"):
     with open(path, "w") as f:
         json.dump(graph, f, indent=2)
     print(f"✅ Graph saved with {len(graph['nodes'])} nodes and {len(graph['links'])} links.")
 
 def build_graph():
-    with open("../comment_keyword_map.json", "r", encoding="utf-8") as f:
+    with open("comment_keyword_map.json", "r", encoding="utf-8") as f:
         comments = json.load(f)
     graph = generate_theme_graph(comments)
     graph = add_llm_links(graph)

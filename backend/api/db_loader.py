@@ -5,7 +5,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 
 # Database URL from environment variable
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://shalini_suade:shalini@localhost:5432/suade_db")
+# DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://shalini_suade:shalini@localhost:5432/suade_db")
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://shalini:Xjv0FWlbmwdJiZA6l1jMusy8fgis5i6w@dpg-d255naqli9vc73ev3bn0-a.virginia-postgres.render.com/suade_db")
 
 # SQLAlchemy setup
 engine = create_engine(DATABASE_URL)
@@ -37,15 +38,15 @@ class ThemeLink(Base):
 # Create tables if not exist
 Base.metadata.create_all(bind=engine)
 
-def load_graph_data_to_db(json_path="../theme_graph.json"):
+def load_graph_data_to_db(json_path="theme_graph.json"):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     db = SessionLocal()
 
     # Optional: Clear old data
-    db.query(ThemeNode).delete()
     db.query(ThemeLink).delete()
+    db.query(ThemeNode).delete()
     db.commit()
 
     for node in data["nodes"]:

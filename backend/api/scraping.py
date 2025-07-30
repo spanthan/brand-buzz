@@ -15,7 +15,7 @@ from sentiment_analysis import *
 tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 
-def get_comments_data(json_path="../tiktok_apify_comments.json"):
+def get_comments_data(json_path="tiktok_apify_comments.json"):
     if not os.path.exists(json_path):
         raise FileNotFoundError(f"JSON file not found: {json_path}")
 
@@ -104,6 +104,7 @@ def filter_comments(all_comments: List[Dict]) -> pd.DataFrame:
     df = pd.DataFrame(all_comments)
 
     print(f"Initial comments: {len(df)}")
+    df["text"] = df["text"].str.lower()
 
     # === Step 1: Remove @mention-only comments ===
     

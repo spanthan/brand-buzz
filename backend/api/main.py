@@ -1,14 +1,7 @@
 import json
-from theme_and_graph import *
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy import create_engine, Column, String, Integer, Float
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy import ForeignKey
-from sqlalchemy.orm import relationship
-from db_loader import *
+from api.db_loader import *
 
 
 # FastAPI setup
@@ -29,7 +22,7 @@ app.add_middleware(
 
 @app.get("/comments")
 def get_comments():
-    with open("../comment_keyword_map.json", "r", encoding="utf-8") as f:
+    with open("comment_keyword_map.json", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     cleaned_comments = []
