@@ -29,7 +29,7 @@ app.add_middleware(
 
 @app.get("/comments")
 def get_comments():
-    with open("comment_keyword_map.json", "r", encoding="utf-8") as f:
+    with open("../comment_keyword_map.json", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     cleaned_comments = []

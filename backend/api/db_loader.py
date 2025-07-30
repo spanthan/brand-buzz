@@ -37,7 +37,7 @@ class ThemeLink(Base):
 # Create tables if not exist
 Base.metadata.create_all(bind=engine)
 
-def load_graph_data_to_db(json_path="theme_graph.json"):
+def load_graph_data_to_db(json_path="../theme_graph.json"):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 

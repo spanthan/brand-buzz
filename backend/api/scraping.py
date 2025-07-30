@@ -1,17 +1,13 @@
 import pandas as pd
 import re
 import ollama
-from nltk.tokenize import word_tokenize
-from nltk import pos_tag
+import nltk
 from typing import List, Dict
-import time
 import os
 import json
 import argostranslate.package
 from langdetect import detect
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
-import numpy as np
 
 from sentiment_analysis import *
 
@@ -19,7 +15,7 @@ from sentiment_analysis import *
 tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
 
-def get_comments_data(json_path="tiktok_apify_comments.json"):
+def get_comments_data(json_path="../tiktok_apify_comments.json"):
     if not os.path.exists(json_path):
         raise FileNotFoundError(f"JSON file not found: {json_path}")
 
@@ -220,8 +216,8 @@ def translate_comment(text):
 
 if __name__ == "__main__":
     # # Ensure NLTK resources are downloaded
-    # nltk.download('punkt')
-    # nltk.download('averaged_perceptron_tagger')
+    nltk.download('punkt')
+    nltk.download('averaged_perceptron_tagger')
 
     comments = get_comments_data()
     filter_comments(comments)
