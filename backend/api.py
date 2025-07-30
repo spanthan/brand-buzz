@@ -6,6 +6,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import create_engine, Column, String, Integer, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy import ForeignKey
+from sqlalchemy.orm import relationship
+
 
 # FastAPI setup
 app = FastAPI(debug=True)
@@ -30,6 +33,21 @@ SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
 
 # Define the tables
+# class ThemeNode(Base):
+#     __tablename__ = "nodes"
+
+#     keyword = Column(String, primary_key=True, index=True)
+#     weight = Column(Integer)
+#     sentiment = Column(String)
+
+# class ThemeLink(Base):
+#     __tablename__ = "links"
+
+#     id = Column(Integer, primary_key=True, autoincrement=True)
+#     source = Column(String)
+#     target = Column(String)
+#     value = Column(Float)
+
 class ThemeNode(Base):
     __tablename__ = "nodes"
 
@@ -37,13 +55,20 @@ class ThemeNode(Base):
     weight = Column(Integer)
     sentiment = Column(String)
 
+    # Optional: backref to links if needed
+    outgoing_links = relationship("ThemeLink", back_populates="source_node", foreign_keys="ThemeLink.source")
+    incoming_links = relationship("ThemeLink", back_populates="target_node", foreign_keys="ThemeLink.target")
+
 class ThemeLink(Base):
     __tablename__ = "links"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    source = Column(String)
-    target = Column(String)
+    source = Column(String, ForeignKey("nodes.keyword"))
+    target = Column(String, ForeignKey("nodes.keyword"))
     value = Column(Float)
+
+    source_node = relationship("ThemeNode", foreign_keys=[source], back_populates="outgoing_links")
+    target_node = relationship("ThemeNode", foreign_keys=[target], back_populates="incoming_links")
 
 # Initialize DB
 Base.metadata.create_all(bind=engine)
@@ -71,25 +96,49 @@ def load_graph_data_to_db(json_path="theme_graph.json"):
     db.close()
     print("✅ Database updated with graph data")
 
+
+@app.get("/comments")
+def get_comments():
+    with open("comment_keyword_map.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    cleaned_comments = []
+
+    for item in data:
+        if "text" in item and "keywords" in item:
+            cleaned_comments.append({
+                "text": item["text"],
+                "keywords": item["keywords"]
+            })
+
+    return cleaned_comments
+
 @app.get("/graph")
 def get_graph_data():
-    # have this here if running for a specific tiktok
-    # comments, keywords = extract_keywords_llm()
-    # run_embedding_pipeline(keywords)
-    # build_graph()
-    # load_graph_data_to_db()
     db = SessionLocal()
     nodes = db.query(ThemeNode).all()
     links = db.query(ThemeLink).all()
 
     node_dicts = [{"keyword": n.keyword, "weight": n.weight, "sentiment": n.sentiment} for n in nodes]
-    link_dicts = [{"source": l.source, "target": l.target, "value": l.value} for l in links]
-
-    # print(node_dicts)
-    # print(link_dicts)
+    
+    link_dicts = [
+        {
+            "source": l.source_node.keyword,
+            "target": l.target_node.keyword,
+            "value": l.value
+        }
+        for l in links
+    ]
 
     return {"nodes": node_dicts, "links": link_dicts}
 
+@app.get("/regenerate")
+def regenerate_keywords():
+    comments, keywords = extract_keywords_llm()
+    run_embedding_pipeline(keywords)
+    build_graph()
+    load_graph_data_to_db()
+    
 # @app.get("/graph")
 # def get_graph_data():
 #     with open("theme_graph.json", "r") as f:
@@ -100,8 +149,5 @@ def get_graph_data():
 @app.on_event("startup")
 def startup_event():
     print("⏳ Loading JSON into database...")
-    comments, keywords = extract_keywords_llm()
-    run_embedding_pipeline(keywords)
-    build_graph()
     load_graph_data_to_db()
     print("✅ FastAPI backend is ready.")
