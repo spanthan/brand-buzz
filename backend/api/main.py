@@ -19,17 +19,17 @@ app.add_middleware(
 
 @app.get("/comments")
 def get_comments():
-    with open("comment_keyword_map.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
+    db = SessionLocal()
+    records = db.query(CommentKeywordMap).all()
 
-    cleaned_comments = []
-
-    for item in data:
-        if "text" in item and "keywords" in item:
-            cleaned_comments.append({
-                "text": item["text"],
-                "keywords": item["keywords"]
-            })
+    cleaned_comments = [
+        {
+            "text": record.text,
+            "keywords": record.keywords
+        }
+        for record in records
+        if record.text and record.keywords
+    ]
 
     return cleaned_comments
 

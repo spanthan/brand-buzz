@@ -1,39 +1,24 @@
 {
   "nodes": [
     {
-      "keyword": "great review",
-      "weight": 1,
-      "sentiment": "positive"
-    },
-    {
-      "keyword": "cerave issues",
-      "weight": 4,
-      "sentiment": "negative"
-    },
-    {
-      "keyword": "cruelty concerns",
-      "weight": 3,
-      "sentiment": "negative"
-    },
-    {
       "keyword": "not cruelty-free",
       "weight": 3,
       "sentiment": "negative"
     },
     {
-      "keyword": "water-based cleanser",
-      "weight": 4,
-      "sentiment": "neutral"
-    },
-    {
-      "keyword": "mild morning cleanser",
+      "keyword": "good morning cleanser",
       "weight": 5,
       "sentiment": "neutral"
     },
     {
-      "keyword": "good for oily skin",
-      "weight": 2,
-      "sentiment": "positive"
+      "keyword": "double cleanse ok",
+      "weight": 4,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "irritated skin",
+      "weight": 1,
+      "sentiment": "negative"
     },
     {
       "keyword": "balms work better",
@@ -41,14 +26,14 @@
       "sentiment": "positive"
     },
     {
-      "keyword": "not foamy enough",
-      "weight": 7,
-      "sentiment": "neutral"
+      "keyword": "good for makeup removal",
+      "weight": 3,
+      "sentiment": "positive"
     },
     {
-      "keyword": "foams with water",
-      "weight": 8,
-      "sentiment": "neutral"
+      "keyword": "not suitable for makeup",
+      "weight": 3,
+      "sentiment": "positive"
     },
     {
       "keyword": "foams up",
@@ -56,7 +41,12 @@
       "sentiment": "neutral"
     },
     {
-      "keyword": "us availability",
+      "keyword": "not foamy",
+      "weight": 6,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "water-based",
       "weight": 1,
       "sentiment": "neutral"
     },
@@ -66,121 +56,81 @@
       "sentiment": "negative"
     },
     {
-      "keyword": "animal testing",
+      "keyword": "works well with water",
+      "weight": 1,
+      "sentiment": "negative"
+    },
+    {
+      "keyword": "animals tested",
       "weight": 3,
       "sentiment": "negative"
-    },
-    {
-      "keyword": "eczema struggles",
-      "weight": 1,
-      "sentiment": "negative"
-    },
-    {
-      "keyword": "amazon has it",
-      "weight": 1,
-      "sentiment": "positive"
-    },
-    {
-      "keyword": "target sells it",
-      "weight": 1,
-      "sentiment": "positive"
     },
     {
       "keyword": "gentle on skin",
       "weight": 1,
       "sentiment": "positive"
+    },
+    {
+      "keyword": "requires rubbing",
+      "weight": 1,
+      "sentiment": "neutral"
+    },
+    {
+      "keyword": "emulsify in hands",
+      "weight": 1,
+      "sentiment": "neutral"
     }
   ],
   "links": [
     {
-      "source": "cerave issues",
-      "target": "cruelty concerns",
-      "value": 2
-    },
-    {
-      "source": "cerave issues",
-      "target": "not cruelty-free",
-      "value": 2
-    },
-    {
-      "source": "cruelty concerns",
-      "target": "not cruelty-free",
+      "source": "double cleanse ok",
+      "target": "good morning cleanser",
       "value": 3
     },
     {
-      "source": "mild morning cleanser",
-      "target": "water-based cleanser",
+      "source": "balms work better",
+      "target": "good for makeup removal",
+      "value": 1
+    },
+    {
+      "source": "good for makeup removal",
+      "target": "not suitable for makeup",
       "value": 2
     },
     {
       "source": "foams up",
-      "target": "foams with water",
-      "value": 6
+      "target": "not foamy",
+      "value": 5
+    },
+    {
+      "source": "requires water",
+      "target": "works well with water",
+      "value": 1
     },
     {
       "source": "foams up",
-      "target": "not foamy enough",
-      "value": 5
-    },
-    {
-      "source": "foams with water",
-      "target": "not foamy enough",
-      "value": 5
-    },
-    {
-      "source": "good for oily skin",
-      "target": "mild morning cleanser",
+      "target": "requires rubbing",
       "value": 1
     },
     {
-      "source": "amazon has it",
-      "target": "target sells it",
+      "source": "not foamy",
+      "target": "requires rubbing",
       "value": 1
     },
     {
-      "source": "animal testing",
-      "target": "cruelty concerns",
+      "source": "good for makeup removal",
+      "target": "not foamy",
       "value": 1
     },
     {
-      "source": "animal testing",
+      "source": "not foamy",
+      "target": "not suitable for makeup",
+      "value": 1
+    },
+    {
+      "source": "animals tested",
       "target": "not cruelty-free",
       "value": 1
-    },
-    {
-      "source": "great review",
-      "target": "foams up",
-      "value": 0.5
-    },
-    {
-      "source": "great review",
-      "target": "amazon has it",
-      "value": 0.5
-    },
-    {
-      "source": "great review",
-      "target": "target sells it",
-      "value": 0.5
-    },
-    {
-      "source": "great review",
-      "target": "gentle on skin",
-      "value": 0.5
-    },
-    {
-      "source": "cerave issues",
-      "target": "eczema struggles",
-      "value": 0.5
-    },
-    {
-      "source": "cerave issues",
-      "target": "gentle on skin",
-      "value": 0.5
-    },
-    {
-      "source": "cruelty concerns",
-      "target": "gentle on skin",
-      "value": 0.5
     },
     {
       "source": "not cruelty-free",
@@ -188,203 +138,178 @@
       "value": 0.5
     },
     {
-      "source": "water-based cleanser",
-      "target": "requires water",
+      "source": "not cruelty-free",
+      "target": "water-based",
       "value": 0.5
     },
     {
-      "source": "water-based cleanser",
-      "target": "foams with water",
+      "source": "not cruelty-free",
+      "target": "not suitable for makeup",
       "value": 0.5
     },
     {
-      "source": "water-based cleanser",
-      "target": "balms work better",
+      "source": "good morning cleanser",
+      "target": "good for makeup removal",
       "value": 0.5
     },
     {
-      "source": "mild morning cleanser",
+      "source": "good morning cleanser",
+      "target": "works well with water",
+      "value": 0.5
+    },
+    {
+      "source": "good morning cleanser",
       "target": "gentle on skin",
       "value": 0.5
     },
     {
-      "source": "mild morning cleanser",
+      "source": "double cleanse ok",
+      "target": "good for makeup removal",
+      "value": 0.5
+    },
+    {
+      "source": "double cleanse ok",
+      "target": "works well with water",
+      "value": 0.5
+    },
+    {
+      "source": "double cleanse ok",
       "target": "balms work better",
       "value": 0.5
     },
     {
-      "source": "good for oily skin",
+      "source": "irritated skin",
       "target": "gentle on skin",
       "value": 0.5
     },
     {
-      "source": "good for oily skin",
-      "target": "eczema struggles",
+      "source": "irritated skin",
+      "target": "requires rubbing",
       "value": 0.5
     },
     {
-      "source": "good for oily skin",
-      "target": "not foamy enough",
+      "source": "irritated skin",
+      "target": "emulsify in hands",
       "value": 0.5
     },
     {
-      "source": "balms work better",
-      "target": "mild morning cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "balms work better",
-      "target": "water-based cleanser",
+      "source": "irritated skin",
+      "target": "good morning cleanser",
       "value": 0.5
     },
     {
       "source": "balms work better",
-      "target": "good for oily skin",
+      "target": "emulsify in hands",
       "value": 0.5
     },
     {
       "source": "balms work better",
-      "target": "eczema struggles",
+      "target": "works well with water",
       "value": 0.5
     },
     {
-      "source": "not foamy enough",
-      "target": "good for oily skin",
+      "source": "balms work better",
+      "target": "good morning cleanser",
       "value": 0.5
     },
     {
-      "source": "not foamy enough",
-      "target": "requires water",
+      "source": "good for makeup removal",
+      "target": "double cleanse ok",
       "value": 0.5
     },
     {
-      "source": "foams with water",
-      "target": "requires water",
+      "source": "not suitable for makeup",
+      "target": "gentle on skin",
       "value": 0.5
     },
     {
-      "source": "foams with water",
-      "target": "water-based cleanser",
+      "source": "not suitable for makeup",
+      "target": "water-based",
       "value": 0.5
     },
     {
       "source": "foams up",
-      "target": "good for oily skin",
+      "target": "good morning cleanser",
       "value": 0.5
     },
     {
       "source": "foams up",
-      "target": "gentle on skin",
+      "target": "emulsify in hands",
       "value": 0.5
     },
     {
-      "source": "us availability",
-      "target": "amazon has it",
+      "source": "water-based",
+      "target": "works well with water",
       "value": 0.5
     },
     {
-      "source": "us availability",
-      "target": "target sells it",
-      "value": 0.5
-    },
-    {
-      "source": "us availability",
-      "target": "great review",
-      "value": 0.5
-    },
-    {
-      "source": "us availability",
-      "target": "cerave issues",
-      "value": 0.5
-    },
-    {
-      "source": "requires water",
-      "target": "foams with water",
-      "value": 0.5
-    },
-    {
-      "source": "requires water",
-      "target": "water-based cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "requires water",
-      "target": "not foamy enough",
-      "value": 0.5
-    },
-    {
-      "source": "requires water",
-      "target": "mild morning cleanser",
-      "value": 0.5
-    },
-    {
-      "source": "animal testing",
+      "source": "water-based",
       "target": "requires water",
       "value": 0.5
     },
     {
-      "source": "animal testing",
-      "target": "target sells it",
+      "source": "water-based",
+      "target": "not suitable for makeup",
       "value": 0.5
     },
     {
-      "source": "eczema struggles",
-      "target": "good for oily skin",
+      "source": "water-based",
+      "target": "not foamy",
       "value": 0.5
     },
     {
-      "source": "eczema struggles",
-      "target": "gentle on skin",
+      "source": "requires water",
+      "target": "water-based",
       "value": 0.5
     },
     {
-      "source": "eczema struggles",
-      "target": "balms work better",
+      "source": "requires water",
+      "target": "requires rubbing",
       "value": 0.5
     },
     {
-      "source": "eczema struggles",
-      "target": "cerave issues",
+      "source": "requires water",
+      "target": "not suitable for makeup",
       "value": 0.5
     },
     {
-      "source": "amazon has it",
-      "target": "us availability",
+      "source": "works well with water",
+      "target": "water-based",
       "value": 0.5
     },
     {
-      "source": "amazon has it",
-      "target": "great review",
+      "source": "works well with water",
+      "target": "good for makeup removal",
       "value": 0.5
     },
     {
-      "source": "amazon has it",
-      "target": "not cruelty-free",
+      "source": "works well with water",
+      "target": "good morning cleanser",
       "value": 0.5
     },
     {
-      "source": "target sells it",
-      "target": "us availability",
+      "source": "animals tested",
+      "target": "requires water",
       "value": 0.5
     },
     {
-      "source": "target sells it",
-      "target": "great review",
+      "source": "animals tested",
+      "target": "works well with water",
       "value": 0.5
     },
     {
-      "source": "target sells it",
-      "target": "animal testing",
-      "value": 0.5
-    },
-    {
-      "source": "gentle on skin",
-      "target": "good for oily skin",
+      "source": "animals tested",
+      "target": "water-based",
       "value": 0.5
     },
     {
       "source": "gentle on skin",
-      "target": "mild morning cleanser",
+      "target": "irritated skin",
+      "value": 0.5
+    },
+    {
+      "source": "gentle on skin",
+      "target": "requires rubbing",
       "value": 0.5
     },
     {
@@ -394,7 +319,37 @@
     },
     {
       "source": "gentle on skin",
-      "target": "cruelty concerns",
+      "target": "emulsify in hands",
+      "value": 0.5
+    },
+    {
+      "source": "requires rubbing",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "requires rubbing",
+      "target": "irritated skin",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify in hands",
+      "target": "requires rubbing",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify in hands",
+      "target": "gentle on skin",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify in hands",
+      "target": "irritated skin",
+      "value": 0.5
+    },
+    {
+      "source": "emulsify in hands",
+      "target": "balms work better",
       "value": 0.5
     }
   ]

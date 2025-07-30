@@ -137,6 +137,9 @@ def run_embedding_pipeline(keywords):
 ]
     with open("comment_keyword_map.json", "w", encoding="utf-8") as f:
         json.dump(lowercased_records, f, indent=2, ensure_ascii=False)
+    
+    print("📤 Loading records into the database...")
+    load_comments_to_db("comment_keyword_map.json")
 
     print("✅ Done.")
 
