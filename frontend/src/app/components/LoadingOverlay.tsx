@@ -1,4 +1,4 @@
-export function LoadingOverlay() {
+export default function LoadingOverlay() {
     return (
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none">
         <div className="bg-white text-black p-6 rounded-lg shadow-xl z-50 pointer-events-auto">
