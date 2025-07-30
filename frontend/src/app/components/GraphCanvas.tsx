@@ -34,18 +34,21 @@ export default function GraphCanvas({ graphData, setSelectedKeyword }: GraphCanv
     const width = 600;
     const height = 500;
 
-    svg.attr("viewBox", [0, 0, width, height]);
+    const margin = 100; // add padding
+    svg.attr("viewBox", [-margin, -margin, width + margin * 2, height + margin * 2]);
+
     const container = svg.append("g");
 
     const zoom = d3.zoom<SVGSVGElement, unknown>()
-      .scaleExtent([0.1, 5])
-      .on("zoom", (event) => {
-        // Only apply zoom if it's not just a pan (e.g. touchpad scroll)
-        if (event.sourceEvent?.type === "wheel" && event.sourceEvent.ctrlKey === false) {
-          return; // Let the page scroll normally
-        }
-        container.attr("transform", event.transform.toString());
-      });
+    .filter((event) => {
+      // Don't capture normal scroll (wheel without ctrlKey)
+      if (event.type === "wheel" && event.ctrlKey === false) return false;
+      return true;
+    })
+    .scaleExtent([0.1, 5])
+    .on("zoom", (event) => {
+      container.attr("transform", event.transform.toString());
+    });
 
     d3.select(svgRef.current as SVGSVGElement).call(zoom);
 
@@ -150,7 +153,7 @@ export default function GraphCanvas({ graphData, setSelectedKeyword }: GraphCanv
       .attr("font-size", "8px")
       .attr("font-weight", "italics")
       .attr("font-family", "Helvetica")
-      .attr("fill", "black")
+      .attr("fill", "white")
       .attr("text-anchor", "middle")
       .attr("dy", "2.5em");
 
@@ -170,6 +173,12 @@ export default function GraphCanvas({ graphData, setSelectedKeyword }: GraphCanv
   }, [graphData]);
 
   return (
-    <svg ref={svgRef} className="w-full h-full touch-pan-y" style={{ touchAction: "pan-y" }} />
+    <div className="w-full h-full overflow-auto">
+      <svg
+        ref={svgRef}
+        className="w-full"
+        style={{ display: "block", marginTop: "0" }}
+      />
+    </div>
   );
 }
