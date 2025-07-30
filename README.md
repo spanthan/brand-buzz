@@ -93,7 +93,8 @@ This project demonstrates a complete data science pipeline from raw social media
 
 ### 1. Data Ingestion
 - Raw TikTok comments from `tiktok_apify_comments.json`
-- 2,276 comments about CeraVe products
+- There is code to scrape from TikTok using apify, but this only ran once to avoid getting charged too many times by Apify
+- In theory, to run this on another TikTok url, you would need to run the apify code with that url. 
 
 ### 2. Preprocessing (`scraping.py`)
 - Filters out mentions, questions, non-English content
@@ -115,7 +116,7 @@ This project demonstrates a complete data science pipeline from raw social media
 
 ## 🔄 Updating the Graph (Local Only)
 
-**Note**: The deployed version uses static data. To update the graph with new analysis, you must run the backend locally.
+**Note**: The deployed version uses static data from a Postgres Database. To update the graph with new analysis, you must run the backend locally.
 
 ### Option 1: Regenerate Keywords via UI
 1. Start the backend locally: `uvicorn api:app --reload --port 8000`
