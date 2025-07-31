@@ -62,12 +62,7 @@ This project demonstrates a complete data science pipeline from raw social media
 
 **Note**: The deployed version uses static data from a Postgres Database. To update the graph with new analysis, you must run the backend locally.
 
-### Option 1: Regenerate Keywords via UI
-1. Start the backend locally: `uvicorn api:app --reload --port 8000`
-2. Open the frontend and click "Regenerate Keywords"
-3. Wait for the LLM to process and update the graph
-
-### Option 2: Manual Pipeline Execution
+### Manual Pipeline Execution
 1. **Run the full pipeline**:
    ```bash
    cd backend
@@ -85,11 +80,6 @@ This project demonstrates a complete data science pipeline from raw social media
    # Update database
    python -c "from api import load_graph_data_to_db; load_graph_data_to_db()"
    ```
-
-### Option 3: API Endpoint
-```bash
-curl -X GET "http://localhost:8000/regenerate"
-```
 
 ## 📁 Project Structure
 
