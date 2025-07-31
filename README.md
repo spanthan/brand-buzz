@@ -151,5 +151,3 @@ suade-take-home/
 - Install Ollama dependencies 
 
 ---
-
-**Note**: The deployed version uses static data. For live updates and keyword regeneration, run the backend locally as described above.
