@@ -8,7 +8,7 @@ This project demonstrates a complete data science pipeline from raw social media
 
 - **Data Processing**: Scrapes and cleans TikTok comments
 - **AI Analysis**: Extracts keywords and themes using LLM (Llama3)
-- **Sentiment Analysis**: Classifies comment sentiment using HuggingFace transformers
+- **Sentiment Analysis**: Classifies comment sentiment using sentence transformers
 - **Network Visualization**: Interactive D3.js graph showing keyword relationships
 - **Real-time Updates**: API endpoints for regenerating analysis
 
@@ -17,7 +17,7 @@ This project demonstrates a complete data science pipeline from raw social media
 ### Backend (Python/FastAPI)
 - **Data Pipeline**: Comment preprocessing, keyword extraction, sentiment analysis
 - **API Server**: FastAPI with PostgreSQL database
-- **AI/ML**: Ollama (Llama3), Sentence Transformers, HuggingFace models
+- **AI/ML**: Ollama (Llama3), Sentence Transformers
 - **Database**: PostgreSQL with SQLAlchemy ORM
 
 ### Frontend (Next.js/React)
@@ -50,8 +50,7 @@ This project demonstrates a complete data science pipeline from raw social media
 
 ### 3. Analysis (`theme_and_graph.py`)
 - **Keyword Extraction**: Uses Llama3 to extract themes from comments
-- **Semantic Matching**: Sentence transformers for keyword-comment matching
-- **Sentiment Analysis**: HuggingFace model for sentiment classification
+- **Semantic Matching**: Sentence transformers for keyword-comment matching and sentiment classification
 - **Graph Generation**: Creates network of keyword relationships
 
 ### 4. Visualization
@@ -119,7 +118,6 @@ suade-take-home/
 
 - `GET /comments` - Returns processed comments with keywords
 - `GET /graph` - Returns theme graph data for visualization
-- `GET /regenerate` - Triggers keyword regeneration (local only)
 
 ## 🎨 Features
 
@@ -161,7 +159,7 @@ suade-take-home/
 ### Backend (Render)
 - Deploy Python app with PostgreSQL
 - Set environment variables for database
-- Install Ollama dependencies
+- Install Ollama dependencies 
 
 ---
 
