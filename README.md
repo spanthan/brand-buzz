@@ -10,7 +10,6 @@ This project demonstrates a complete data science pipeline from raw social media
 - **AI Analysis**: Extracts keywords and themes using LLM (Llama3)
 - **Sentiment Analysis**: Classifies comment sentiment using sentence transformers
 - **Network Visualization**: Interactive D3.js graph showing keyword relationships
-- **Real-time Updates**: API endpoints for regenerating analysis
 
 ## 🏗️ Architecture
 
