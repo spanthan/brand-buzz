@@ -1,17 +1,15 @@
-from pydantic import BaseModel
-from typing import List
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Integer, String, Text, ForeignKey
+from app.db.base_class import Base
 
-class CommentBase(BaseModel):
-    text: str
-    sentiment: str | None = None
+class Comment(Base):
+    __tablename__ = "comments"
 
-class CommentCreate(CommentBase):
-    video_id: int
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    text: Mapped[str] = mapped_column(Text, nullable=False)
+    sentiment: Mapped[str | None] = mapped_column(String, nullable=True)
 
-class CommentOut(CommentBase):
-    id: int
-    video_id: int
-    keywords: List[str] = []   # show just keyword text
+    video_id: Mapped[int] = mapped_column(ForeignKey("videos.id"))
+    video: Mapped["Video"] = relationship("Video", back_populates="comments")
 
-    class Config:
-        orm_mode = True
+    keywords: Mapped[list["CommentKeyword"]] = relationship("CommentKeyword", back_populates="comment")

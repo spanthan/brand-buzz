@@ -1,12 +1,12 @@
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import relationship
-from app.db.base import Base
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Integer, String
+from app.db.base_class import Base
 
 class Brand(Base):
     __tablename__ = "brands"
 
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, unique=True, index=True, nullable=False)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    name: Mapped[str] = mapped_column(String, unique=True, index=True)
 
-    products = relationship("Product", back_populates="brand", cascade="all, delete-orphan")
-    users = relationship("User", back_populates="brand", cascade="all, delete-orphan")
+    products: Mapped[list["Product"]] = relationship("Product", back_populates="brand")
+    users: Mapped[list["User"]] = relationship("User", back_populates="brand")

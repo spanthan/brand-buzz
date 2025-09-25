@@ -1,14 +1,14 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
-from app.db.base import Base
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Integer, String, ForeignKey
+from app.db.base_class import Base
 
 class User(Base):
     __tablename__ = "users"
 
-    id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, index=True, nullable=False)
-    hashed_password = Column(String, nullable=False)
-    role = Column(String, default="member")  # "admin" or "member"
-    brand_id = Column(Integer, ForeignKey("brands.id", ondelete="CASCADE"))
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    username: Mapped[str] = mapped_column(String, unique=True, index=True)
+    hashed_password: Mapped[str] = mapped_column(String)
+    role: Mapped[str] = mapped_column(String)
 
-    brand = relationship("Brand", back_populates="users")
+    brand_id: Mapped[int] = mapped_column(ForeignKey("brands.id"))
+    brand: Mapped["Brand"] = relationship("Brand", back_populates="users")

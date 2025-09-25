@@ -19,3 +19,6 @@ pydantic-settings==2.4.0           # manage .env configs
 
 # Utilities
 python-dotenv==1.0.1               # load .env files
+
+passlib[bcrypt]==1.7.4
+

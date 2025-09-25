@@ -1,14 +1,15 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
-from app.db.base import Base
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Integer, String, ForeignKey
+from app.db.base_class import Base
 
 class Video(Base):
     __tablename__ = "videos"
 
-    id = Column(Integer, primary_key=True, index=True)
-    product_id = Column(Integer, ForeignKey("products.id", ondelete="CASCADE"))
-    platform = Column(String, nullable=False)  # e.g., TikTok, YouTube
-    url = Column(String, unique=True, nullable=False)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    platform: Mapped[str] = mapped_column(String)
+    url: Mapped[str] = mapped_column(String, unique=True)
 
-    product = relationship("Product", back_populates="videos")
-    comments = relationship("Comment", back_populates="video", cascade="all, delete-orphan")
+    product_id: Mapped[int] = mapped_column(ForeignKey("products.id"))
+    product: Mapped["Product"] = relationship("Product", back_populates="videos")
+
+    comments: Mapped[list["Comment"]] = relationship("Comment", back_populates="video")

@@ -1,14 +1,16 @@
-from sqlalchemy import Column, Integer, ForeignKey, Float
-from sqlalchemy.orm import relationship
-from app.db.base import Base
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy import Integer, Float, ForeignKey
+from app.db.base_class import Base
 
 class CommentKeyword(Base):
     __tablename__ = "comment_keywords"
 
-    id = Column(Integer, primary_key=True, index=True)
-    comment_id = Column(Integer, ForeignKey("comments.id", ondelete="CASCADE"))
-    keyword_id = Column(Integer, ForeignKey("keywords.id", ondelete="CASCADE"))
-    weight = Column(Float, default=1.0)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
+    weight: Mapped[float] = mapped_column(Float, default=1.0)
 
-    comment = relationship("Comment", back_populates="keywords")
-    keyword = relationship("Keyword", back_populates="comment_keywords")
+    comment_id: Mapped[int] = mapped_column(ForeignKey("comments.id"))
+    keyword_id: Mapped[int] = mapped_column(ForeignKey("keywords.id"))
+
+    comment: Mapped["Comment"] = relationship("Comment", back_populates="keywords")
+    keyword: Mapped["Keyword"] = relationship("Keyword", back_populates="comment_keywords")
+
